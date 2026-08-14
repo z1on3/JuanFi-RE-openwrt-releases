@@ -98,12 +98,17 @@ filesystem (the node's web setup UI is served only from LittleFS).
 
 ### Flashing the node (esptool, ESP‑12E / NodeMCU)
 
+These images are built for an **ESP‑12E / 4 MB flash, 1 MB LittleFS** (`eagle.flash.4m1m`)
+layout, so the FS goes at **`0x300000`** (the FS bin is exactly `0xFA000` = 1,024,000 B):
+
 ```sh
-# firmware
+# firmware (first bin) → 0x0
 esptool.py --port <PORT> --baud 460800 write_flash 0x0 JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin
-# filesystem (LittleFS) — offset is board dependent; 0x200000 for a 4MB/1MB-FS layout
-esptool.py --port <PORT> --baud 460800 write_flash 0x200000 JuanFi-RE-ESP8266-node-littlefs-v1.0.bin
+# LittleFS (second bin) → 0x300000  (NOT 0x200000 — that is the 2 MB-FS layout)
+esptool.py --port <PORT> --baud 460800 write_flash 0x300000 JuanFi-RE-ESP8266-node-littlefs-v1.0.bin
 ```
+
+Foolproof alternative that computes the offset for you: `pio run -e esp12e_wireless -t uploadfs`.
 
 ### Setting up the node after flashing
 
