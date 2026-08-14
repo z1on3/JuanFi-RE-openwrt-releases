@@ -41,6 +41,18 @@ blob. Each is ~11 MB and fits the 16 MB flash with headroom.
 | Comfast **CF‑N5 v2** | `zbtlink_zbt-wg1608-16m` | Not a mainline OpenWrt board; hardware‑compatible with the ZBT **WG1608 (16 MB)** profile, which this image targets. |
 | Ruijie **RG‑EW1200G PRO v1.1** | `ruijie_rg-ew1200g-pro-v1.1` | **Officially supported** by OpenWrt (since 24.10.0) — a first‑class device profile. |
 
+### First‑boot defaults (vendo appliance)
+
+Each image comes up ready to run as a PisoWiFi gateway:
+
+- **LAN `10.0.0.1/24`** — the common vendo gateway address; the portal and admin are
+  served here.
+- **Wi‑Fi enabled on both bands** (2.4 GHz + 5 GHz), **open** (auth is the captive
+  portal, not a Wi‑Fi key), SSID **`JuanFi Reloaded`**.
+- **LuCI** (OpenWrt's web admin) at **`http://10.0.0.1/cgi-bin/luci`** — log in as
+  `root` and set a password on first use. The captive portal owns `/`, so LuCI stays
+  reachable at `/cgi-bin/luci`.
+
 ### Flashing the router
 
 **There is no custom flashing** — these are standard OpenWrt sysupgrade images. Flash
