@@ -15,7 +15,8 @@ node** firmware.
 
 | Component | File | Version |
 |---|---|---|
-| Router image (Comfast **CF‑N5 v2**) | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.1.bin` | **beta 0.1** |
+| Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.1.bin` | **beta 0.1** |
+| Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.1.bin` | **beta 0.1** |
 | ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin` | **v1.0** |
 | ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v1.0.bin` | **v1.0** |
 
@@ -27,28 +28,31 @@ sha256sum -c SHA256SUMS.txt
 
 ---
 
-## Router image — Comfast CF‑N5 v2
+## Router images
 
-- **Base:** stock **OpenWrt 24.10.3** (`r28872-daca7c049b`), target `ramips/mt7621`.
-- **Device profile:** `zbtlink_zbt-wg1608-16m`. The CF‑N5 v2 is not a mainline
-  OpenWrt board; it is hardware‑compatible with the ZBT **WG1608 (16 MB)** profile,
-  which is what this image targets.
-- The JuanFi‑RE portal + admin app (PHP 8 + SQLite + nftables captive portal) is
-  baked into the rootfs and initialises itself on first boot. No license server,
-  no phone‑home, no encrypted app blob.
+All router images are stock **OpenWrt 24.10.3** (`r28872-daca7c049b`),
+`ramips/mt7621` (MediaTek MT7621, `mipsel_24kc`), with the JuanFi‑RE portal + admin
+app (PHP 8 + SQLite + nftables captive portal) baked into the rootfs. They
+self‑initialise on first boot — no license server, no phone‑home, no encrypted app
+blob. Each is ~11 MB and fits the 16 MB flash with headroom.
+
+| Device | OpenWrt profile | Notes |
+|---|---|---|
+| Comfast **CF‑N5 v2** | `zbtlink_zbt-wg1608-16m` | Not a mainline OpenWrt board; hardware‑compatible with the ZBT **WG1608 (16 MB)** profile, which this image targets. |
+| Ruijie **RG‑EW1200G PRO v1.1** | `ruijie_rg-ew1200g-pro-v1.1` | **Officially supported** by OpenWrt (since 24.10.0) — a first‑class device profile. |
 
 ### Flashing the router
 
-**There is no custom flashing** — this is a standard OpenWrt sysupgrade image. Flash it
-exactly as you would any OpenWrt image for your router: via **LuCI → System → Backup /
-Flash Firmware → Flash new firmware**, or `sysupgrade` over SSH. Follow the official
-OpenWrt guide: <https://openwrt.org/docs/guide-user/installation/generic.flashing>
+**There is no custom flashing** — these are standard OpenWrt sysupgrade images. Flash
+your device's image exactly as you would any OpenWrt image: via **LuCI → System →
+Backup / Flash Firmware → Flash new firmware**, or `sysupgrade` over SSH. Follow the
+official OpenWrt guide: <https://openwrt.org/docs/guide-user/installation/generic.flashing>
 
 After reboot the portal is served at the router's LAN IP; the admin panel is at
 `/admin/` (first login creates the admin account).
 
-⚠️ **Beta.** Flash at your own risk on hardware you can recover. Only tested on the
-CF‑N5 v2 / WG1608‑16m combination.
+⚠️ **Beta.** Flash at your own risk on hardware you can recover. Each image is only
+validated on its listed device.
 
 ---
 
