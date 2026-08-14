@@ -39,18 +39,13 @@ sha256sum -c SHA256SUMS.txt
 
 ### Flashing the router
 
-1. Copy the image to the router (SSH/SCP) into `/tmp`.
-2. Flash with sysupgrade (**`-n` wipes config for a clean first boot — recommended**):
-   ```sh
-   sysupgrade -n /tmp/JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.1.bin
-   ```
-   - Upgrading **from an older swconfig OpenWrt** may require `-F` (force) because
-     this image is DSA‑based (`compat 1.1`).
-3. After reboot the portal is served at the router's LAN IP; the admin panel is at
-   `/admin/` (first login creates the admin account).
+**There is no custom flashing** — this is a standard OpenWrt sysupgrade image. Flash it
+exactly as you would any OpenWrt image for your router: via **LuCI → System → Backup /
+Flash Firmware → Flash new firmware**, or `sysupgrade` over SSH. Follow the official
+OpenWrt guide: <https://openwrt.org/docs/guide-user/installation/generic.flashing>
 
-> **Recovery:** the MT7621 has a U‑Boot web recovery — hold **reset** while powering
-> on, set your PC to `192.168.1.x`, and flash via the recovery page at `192.168.1.1`.
+After reboot the portal is served at the router's LAN IP; the admin panel is at
+`/admin/` (first login creates the admin account).
 
 ⚠️ **Beta.** Flash at your own risk on hardware you can recover. Only tested on the
 CF‑N5 v2 / WG1608‑16m combination.
