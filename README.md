@@ -38,7 +38,7 @@ blob. Each is ~11 MB and fits the 16 MB flash with headroom.
 
 | Device | OpenWrt profile | Notes |
 |---|---|---|
-| Comfast **CF‑N5 v2** | `zbtlink_zbt-wg1608-16m` | Not a mainline OpenWrt board; hardware‑compatible with the ZBT **WG1608 (16 MB)** profile, which this image targets. |
+| Comfast **CF‑N5 v2** | `zbtlink_zbt-wg3526-16m` | Not a mainline OpenWrt board; built on the ZBT **WG3526 (16 MB)** profile, which matches the CF‑N5's actual radios — **MT7603E (2.4 GHz) + MT7612E (5 GHz)** — so both bands work. |
 | Ruijie **RG‑EW1200G PRO v1.1** | `ruijie_rg-ew1200g-pro-v1.1` | **Officially supported** by OpenWrt (since 24.10.0) — a first‑class device profile. |
 
 ### First‑boot defaults (vendo appliance)
@@ -52,6 +52,9 @@ Each image comes up ready to run as a PisoWiFi gateway:
 - **LuCI** (OpenWrt's web admin) at **`http://10.0.0.1/cgi-bin/luci`** — log in as
   `root` and set a password on first use. The captive portal owns `/`, so LuCI stays
   reachable at `/cgi-bin/luci`.
+- **Admin console** at **`http://10.0.0.1/admin/`** ships with a default login —
+  **username `admin`, password `admin`**. **Change it immediately** on the admin
+  Settings page after first sign‑in.
 
 ### Flashing the router
 
@@ -60,8 +63,15 @@ your device's image exactly as you would any OpenWrt image: via **LuCI → Syste
 Backup / Flash Firmware → Flash new firmware**, or `sysupgrade` over SSH. Follow the
 official OpenWrt guide: <https://openwrt.org/docs/guide-user/installation/generic.flashing>
 
+> **Switching profiles / first install:** if the device is currently running a
+> *different* OpenWrt board profile (e.g. an earlier build of this image on a
+> different profile, or stock vendor firmware), `sysupgrade` will refuse the image
+> as "not compatible". Use **`sysupgrade -F -n`** (force, wipe config) over SSH, or
+> flash via the device's **U‑Boot recovery** (MT7621: hold reset, PC on
+> `192.168.1.x`, recovery page at `192.168.1.1`).
+
 After reboot the portal is served at the router's LAN IP; the admin panel is at
-`/admin/` (first login creates the admin account).
+`/admin/` (sign in with `admin` / `admin`, then change the password).
 
 ⚠️ **Beta.** Flash at your own risk on hardware you can recover. Each image is only
 validated on its listed device.
