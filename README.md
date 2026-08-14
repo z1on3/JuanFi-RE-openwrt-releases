@@ -17,7 +17,6 @@ node** firmware.
 |---|---|---|
 | Router image (Comfast **CF‑N5 v2**) | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.1.bin` | **beta 0.1** |
 | ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin` | **v1.0** |
-| ESP8266 node — LAN firmware | `JuanFi-RE-ESP8266-node-LAN-firmware-v1.0.bin` | **v1.0** |
 | ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v1.0.bin` | **v1.0** |
 
 Verify downloads against [`SHA256SUMS.txt`](SHA256SUMS.txt):
@@ -63,15 +62,14 @@ CF‑N5 v2 / WG1608‑16m combination.
 The node needs **two** images flashed: the **firmware** and the **LittleFS**
 filesystem (the node's web setup UI is served only from LittleFS).
 
-- **Wireless** firmware — node joins the router Wi‑Fi as a station (default).
-- **LAN** firmware — same, with the provisioning role marked as wired/LAN.
+- **Wireless** firmware — node joins the router Wi‑Fi as a station.
 - Flash the LittleFS image **before** provisioning; re‑flashing it later wipes the
   saved Wi‑Fi/token/pin config.
 
 ### Flashing the node (esptool, ESP‑12E / NodeMCU)
 
 ```sh
-# firmware (choose Wireless or LAN)
+# firmware
 esptool.py --port <PORT> --baud 460800 write_flash 0x0 JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin
 # filesystem (LittleFS) — offset is board dependent; 0x200000 for a 4MB/1MB-FS layout
 esptool.py --port <PORT> --baud 460800 write_flash 0x200000 JuanFi-RE-ESP8266-node-littlefs-v1.0.bin
