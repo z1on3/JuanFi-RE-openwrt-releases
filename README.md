@@ -70,8 +70,36 @@ esptool.py --port <PORT> --baud 460800 write_flash 0x0 JuanFi-RE-ESP8266-node-Wi
 esptool.py --port <PORT> --baud 460800 write_flash 0x200000 JuanFi-RE-ESP8266-node-littlefs-v1.0.bin
 ```
 
-Then open the node's setup page (its AP or LAN IP) to provision Wi‑Fi + the
-router pairing token.
+### Setting up the node after flashing
+
+Once **both** images are flashed, bring the node online from any phone or laptop —
+no `curl`, and you never type the router token by hand:
+
+**1. Connect to the node.** In your Wi‑Fi list, join the node's setup network
+**`CVFi-Node-Setup`** (open, no password). The "sign in to network" sheet usually
+pops automatically; if it doesn't, open `http://192.168.4.1/`. On first access the
+node asks you to **create an admin password**, then signs you in to the node's
+setup UI.
+
+**2. Put the node on the router Wi‑Fi.** In **Settings → Node settings**, enter your
+router's Wi‑Fi SSID/password (and the router's IP/port if it isn't the
+`10.0.0.1:80` default), then **Save & reboot**. When it comes back, the
+**Dashboard** should show **Router link up** — the node is now on the router
+network.
+
+**3. Enroll with an activation code.** The router hands the node its pairing token
+through a one‑time code:
+
+1. In the **router admin**, open the **Nodes** page and click **Enroll node** — a
+   **6‑digit activation code** appears and the panel waits for the node.
+2. On the node's UI, go to **Settings → Pair with router**, type that 6‑digit code,
+   and press **Activate**. (The Dashboard must already show **Router link up**.)
+3. The node exchanges the code with the router, receives its token, saves it, and
+   **reboots paired**. The router's **Nodes** page then shows it online.
+
+The token is fetched automatically and is never displayed on either side. A
+wrong/expired/already‑used code shows *"code rejected or expired"* — just generate
+a new one on the router and try again.
 
 ---
 
