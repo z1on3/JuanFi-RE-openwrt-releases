@@ -34,6 +34,10 @@ On first access the node asks you to **create an admin password**, then signs yo
 
 **2. Point the node at your router's Wi‑Fi.**
 Go to **Settings → Node settings → Wi‑Fi**:
+
+![Node Sub-Vendo Console Settings page](img/01-node-settings.png)
+*The node's own console (JUANFI NODE — Sub‑Vendo Console), Settings page.*
+
 - Press **SCAN** and pick your router's SSID (e.g. **`JuanFi Reloaded`**) from the list.
 - Enter the Wi‑Fi **password** if your router Wi‑Fi has one (leave blank to keep the
   current value / for an open hotspot).
@@ -44,6 +48,12 @@ Go to **Settings → Node settings → Wi‑Fi**:
 > Blank password / token fields keep the current stored value. The node reboots to apply
 > the Wi‑Fi change.
 
+![Wi-Fi SCAN dropdown](img/02-node-wifi-scan.png)
+*Press SCAN and pick your router's SSID from the list.*
+
+![Save & reboot node](img/03-node-save-reboot.png)
+*Scroll to the bottom and press SAVE & REBOOT NODE.*
+
 **3. Confirm the node joined the router.**
 After it reboots, open the node's **Dashboard**. You want to see:
 - top‑right **ROUTER LINK UP**
@@ -53,6 +63,9 @@ After it reboots, open the node's **Dashboard**. You want to see:
 
 From now on you reach the node's console at that STA IP or `cvfi-node-<id>.local`
 (the `CVFi-Node-Setup` AP is gone).
+
+![Node Dashboard status](img/04-node-status.png)
+*Node Dashboard → Node status: Wi‑Fi (STA) connected = YES, Setup AP off (on Wi‑Fi).*
 
 ---
 
@@ -65,6 +78,12 @@ on the Wi‑Fi). Click **ENROLL NODE**.
 A dialog shows a **6‑digit activation code** (e.g. `278 303`) and *"Waiting for the node
 to activate…"*. The code expires in 10 minutes.
 
+![Router NodeMCU page](img/05-router-nodemcu.png)
+*Router admin → NodeMCU (Subvendos): the node is ONLINE. Click ENROLL NODE.*
+
+![Enroll code dialog](img/06-router-enroll-code.png)
+*The router shows a 6‑digit code and waits for the node to activate.*
+
 **5. Enter the code on the node.**
 On the node's console go to **Settings → Pair with router**, type the **6‑digit code**,
 and press **ACTIVATE**.
@@ -72,10 +91,19 @@ and press **ACTIVATE**.
   saves it, and reboots.
 - The node shows **"Paired — the node is rebooting to come online."**
 
+![Node Pair with router](img/07-node-pair-activate.png)
+*On the node: Settings → Pair with router → type the 6‑digit code → ACTIVATE.*
+
+![Node paired](img/08-node-paired.png)
+*The node confirms: "Paired — the node is rebooting to come online."*
+
 **6. Done.**
 The router dialog updates to **"✓ Activated by node `<id>` — it will reboot and come
 online shortly."** After the reboot the node appears **ONLINE** and **paired** in the
 router's **NodeMCU** list. You never typed the token.
+
+![Router confirms activation](img/09-router-activated.png)
+*Router: "✓ Activated by node … — it will reboot and come online shortly."*
 
 ---
 
