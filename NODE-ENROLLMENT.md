@@ -72,14 +72,19 @@ From now on you reach the node's console at that STA IP or `cvfi-node-<id>.local
 ## Part B — Enroll (pair) the node with the router
 
 **4. Start enrollment on the router.**
-Open the router admin **`http://10.0.0.1/admin/`** → **NodeMCU** (under *Subvendos*).
-Your node should already be listed with status **ONLINE** (it self‑registers once it's
-on the Wi‑Fi). Click **ENROLL NODE**.
+Open the router admin **`http://10.0.0.1/admin/`** → **NodeMCU** (under *Subvendos*)
+and click **ENROLL NODE** (top‑right of the NodeMCU card).
+
+> **The node is not listed here yet — that's expected.** An unpaired node has no auth
+> token, so the router rejects its registration and it stays invisible in this list.
+> The node does **not** enroll itself; you start pairing from this button. It appears
+> here (as **ONLINE**) only *after* it activates in the next steps.
+
 A dialog shows a **6‑digit activation code** (e.g. `278 303`) and *"Waiting for the node
 to activate…"*. The code expires in 10 minutes.
 
 ![Router NodeMCU page](img/05-router-nodemcu.png)
-*Router admin → NodeMCU (Subvendos): the node is ONLINE. Click ENROLL NODE.*
+*Router admin → NodeMCU (Subvendos): click ENROLL NODE to start pairing.*
 
 ![Enroll code dialog](img/06-router-enroll-code.png)
 *The router shows a 6‑digit code and waits for the node to activate.*
@@ -122,6 +127,7 @@ router's **NodeMCU** list. You never typed the token.
 | Symptom | Fix |
 |---|---|
 | No `CVFi-Node-Setup` AP after flashing | The node kept an old config in EEPROM — **erase the chip** and reflash firmware + LittleFS (see README). |
-| Node not listed / not **ONLINE** on the router | It isn't on the router Wi‑Fi yet. On the node Dashboard confirm **Router link up**; recheck the SSID/password and **Router host = 10.0.0.1** in node Settings. |
+| Node not listed on the router *before* pairing | **Expected.** An unpaired node has no token, so it isn't shown. Don't wait for it — click **ENROLL NODE** (Part B) and it appears only after it activates. |
+| Node stays **OFFLINE** *after* pairing | It isn't reaching the router. On the node Dashboard confirm **Router link up** (STA connected) *and* **Last router heartbeat ok**; recheck the SSID/password and **Router host = 10.0.0.1** in node Settings. |
 | **"code rejected or expired"** on Activate | The code lives 10 min and is single‑use. Click **ENROLL NODE** again on the router for a fresh code, and make sure the node shows **Router link up** first. |
 | Node online but no coins register | Check the node's **Coin Acceptor** pins and test with **Coin Tester**; confirm the coin rates on the router. |
