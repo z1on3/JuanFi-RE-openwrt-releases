@@ -1,0 +1,2 @@
+# Flashable binaries are distributed as GitHub Release assets, not committed.
+*.bin
