@@ -76,6 +76,15 @@ After reboot the portal is served at the router's LAN IP; the admin panel is at
 ⚠️ **Beta.** Flash at your own risk on hardware you can recover. Each image is only
 validated on its listed device.
 
+### Something not working? Send us debug logs
+
+Every image includes a one-tap diagnostics bundle. Even if the admin panel or portal
+is misbehaving, open **`http://10.0.0.1/cgi-bin/debug-logs`** in a browser (or tap
+**Download debug logs** on the admin login page) — it downloads a small `.tar.gz`
+capturing first-boot script results, DB/Wi-Fi/network/firewall state, and system logs
+(with secrets redacted). Send that file to support and we can see exactly where it
+failed.
+
 ---
 
 ## ESP8266 coin‑acceptor node

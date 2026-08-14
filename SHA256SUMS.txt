@@ -1,4 +1,4 @@
-77d1623ed5725f63b3ad1698043aeca6523680e124e2a86561a7717c56bb27f0 *JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.1.bin
-58ffb7e82772b0e87cb64e20481a6cc857894040013ad6801fe17f7745b50ee8 *JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.1.bin
+fe89674c3a678d64bb86f39ce712e1214814c902135f8491c41b3273d26e6c91 *JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.1.bin
+2a2fc23471c649004ae1a3fa1a0c0da411d2b54165915cae0e5dae07b3e6f3d3 *JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.1.bin
 6b4f106c042d94e0fc47fa61c94356ac515860839383743b31dfac31785cf907 *esp8266-node/JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin
 73ecacd52e06919df719dea9312d6fa7c38ce7a5777ed19eec99174e5cb796f7 *esp8266-node/JuanFi-RE-ESP8266-node-littlefs-v1.0.bin
