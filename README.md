@@ -112,6 +112,9 @@ Foolproof alternative that computes the offset for you: `pio run -e esp12e_wirel
 
 ### Setting up the node after flashing
 
+> 📖 **Full step‑by‑step guide: [NODE-ENROLLMENT.md](NODE-ENROLLMENT.md)** — getting the
+> node onto Wi‑Fi and pairing it with the router (with troubleshooting).
+
 Once **both** images are flashed, bring the node online from any phone or laptop —
 no `curl`, and you never type the router token by hand:
 
