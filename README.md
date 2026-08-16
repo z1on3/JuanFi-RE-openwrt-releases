@@ -15,10 +15,13 @@ node** firmware.
 
 | Component | File | Version |
 |---|---|---|
-| Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.1.bin` | **beta 0.1** |
-| Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.1.bin` | **beta 0.1** |
+| Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.2.bin` | **beta 0.2** |
+| Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.2.bin` | **beta 0.2** |
 | ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin` | **v1.0** |
 | ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v1.0.bin` | **v1.0** |
+
+> **What's new in beta 0.2?** See [`CHANGELOG.md`](CHANGELOG.md). The ESP8266 node
+> firmware is unchanged since v1.0 — no reflash needed if your node is already on v1.0.
 
 Verify downloads against [`SHA256SUMS.txt`](SHA256SUMS.txt):
 
