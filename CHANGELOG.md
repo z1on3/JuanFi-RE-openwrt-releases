@@ -7,6 +7,11 @@ All notable changes to the JuanFi‑RE flashable releases are documented here.
 Router images bump to **beta 0.2** (OpenWrt 24.10.3). The ESP8266 coin‑acceptor
 node firmware is **unchanged since v1.0** — no reflash needed.
 
+### Devices
+- Added a **dev‑kit / experimental** image for the ASUS **RT‑AX52** (the development
+  reference board), built on **OpenWrt 25.12.0** (`mediatek/filogic`, aarch64).
+  Published for testers; not on the 24.10.3 base of the other two boards.
+
 ### Anti‑tethering / hotspot re‑share protection
 - **Downstream TTL/hop‑limit cap** drops traffic from devices re‑sharing the
   hotspot (the AdoPisoft method), matching the decremented TTL at the FORWARD hook.

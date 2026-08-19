@@ -17,6 +17,7 @@ node** firmware.
 |---|---|---|
 | Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.2.bin` | **beta 0.2** |
 | Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.2.bin` | **beta 0.2** |
+| Router image — ASUS **RT‑AX52** _(dev kit)_ | `JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.2.bin` | **beta 0.2** |
 | ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin` | **v1.0** |
 | ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v1.0.bin` | **v1.0** |
 
@@ -33,9 +34,9 @@ sha256sum -c SHA256SUMS.txt
 
 ## Router images
 
-All router images are stock **OpenWrt 24.10.3** (`r28872-daca7c049b`),
-`ramips/mt7621` (MediaTek MT7621, `mipsel_24kc`), with the JuanFi‑RE portal + admin
-app (PHP 8 + SQLite + nftables captive portal) baked into the rootfs. They
+The two `ramips/mt7621` router images are stock **OpenWrt 24.10.3**
+(`r28872-daca7c049b`, MediaTek MT7621, `mipsel_24kc`), with the JuanFi‑RE portal +
+admin app (PHP 8 + SQLite + nftables captive portal) baked into the rootfs. They
 self‑initialise on first boot — no license server, no phone‑home, no encrypted app
 blob. Each is ~11 MB and fits the 16 MB flash with headroom.
 
@@ -43,6 +44,7 @@ blob. Each is ~11 MB and fits the 16 MB flash with headroom.
 |---|---|---|
 | Comfast **CF‑N5 v2** | `zbtlink_zbt-wg3526-16m` | Not a mainline OpenWrt board; built on the ZBT **WG3526 (16 MB)** profile, which matches the CF‑N5's actual radios — **MT7603E (2.4 GHz) + MT7612E (5 GHz)** — so both bands work. |
 | Ruijie **RG‑EW1200G PRO v1.1** | `ruijie_rg-ew1200g-pro-v1.1` | **Officially supported** by OpenWrt (since 24.10.0) — a first‑class device profile. |
+| ASUS **RT‑AX52** _(dev kit)_ | `asus_rt-ax52` | **Dev‑kit / experimental** build on **OpenWrt 25.12.0** (`mediatek/filogic`, aarch64) — the development reference board, published for testers. Not on the 24.10.3 base above; validate carefully. |
 
 ### First‑boot defaults (vendo appliance)
 
