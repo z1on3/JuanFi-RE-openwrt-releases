@@ -23,6 +23,9 @@ v1.1, and the RT‑AX52 dev‑kit). The ESP8266 coin‑acceptor node firmware is
 - **Linksys EA8300 also built on OpenWrt 23.05.5** (in addition to 24.10.3), because
   upgrading this board to 24.10.x can fail to boot ([openwrt#17979](https://github.com/openwrt/openwrt/issues/17979)).
   The **23.05.5** image is recommended for the EA8300; both are published.
+- **EDUP EP‑RT2983** (Wi‑Fi 6) — `ramips/mt7621`, profile `edup_ep-rt2983` (MT7621AT +
+  MT7915, 5× GbE, 128 MB NAND / 256 MB RAM). Built on **OpenWrt 25.12.4** (the board was
+  added after the 24.10 series). Sysupgrade image; first install from stock uses factory.
 
 ### Monetization: Router‑Pro / Free tiers
 - **Device tier awareness** — cache / sync / redeem with a tier badge; Free vs Pro.

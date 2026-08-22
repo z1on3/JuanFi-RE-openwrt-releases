@@ -21,6 +21,7 @@ node** firmware.
 | Router image — Linksys **EA8300** (AC2200) — OpenWrt **23.05.5** _(recommended)_ | `JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.bin` | **beta 0.3** |
 | Router image — Linksys **EA8300** (AC2200) — OpenWrt 24.10.3 | `JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.bin` | **beta 0.3** |
 | Router image — Linksys **WRT1900ACS** | `JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.bin` | **beta 0.3** |
+| Router image — **EDUP EP‑RT2983** (Wi‑Fi 6) | `JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.bin` | **beta 0.3** |
 | Router image — ASUS **RT‑AX52** _(dev kit)_ | `JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.bin` | **beta 0.3** |
 | ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin` | **v1.0** |
 | ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v1.0.bin` | **v1.0** |
@@ -54,6 +55,7 @@ encrypted app blob.
 | **Newifi D2** (D‑Team) | `ramips/mt7621` · `d-team_newifi-d2` | **Officially supported** by OpenWrt (MT7621, 32 MB flash / 512 MB RAM). [Device page](https://openwrt.org/toh/hwdata/d-team/d-team_newifi_d2). |
 | Linksys **EA8300** (AC2200) | `ipq40xx/generic` · `linksys_ea8300` | **Officially supported** by OpenWrt (Qualcomm **IPQ4019**, tri‑radio, NAND, dual‑partition). Provided in **two builds: OpenWrt 23.05.5 (recommended) and 24.10.3**. ⚠️ Upgrading this board to 24.10.x can fail to boot / sysupgrade ([openwrt#17979](https://github.com/openwrt/openwrt/issues/17979)) — prefer the **23.05.5** image. Our `.bin` is a **sysupgrade** image; first install from stock Linksys firmware uses the OpenWrt **factory** flow. [Device page](https://openwrt.org/toh/linksys/ea8300). |
 | Linksys **WRT1900ACS** | `mvebu/cortexa9` · `linksys_wrt1900acs` | **Officially supported** by OpenWrt (Marvell **Armada 385**, ARMv7, 128 MB NAND / 512 MB RAM). Dual‑firmware (auto‑failover) device — first install from stock uses the OpenWrt **factory** image; our `.bin` is a **sysupgrade** image. [Device page](https://openwrt.org/toh/linksys/wrt1900acs). |
+| **EDUP EP‑RT2983** (Wi‑Fi 6) | `ramips/mt7621` · `edup_ep-rt2983` | **Officially supported** by OpenWrt (MediaTek **MT7621AT** + MT7915 802.11ax, 5× GbE, 128 MB NAND / 256 MB RAM). Built on **OpenWrt 25.12.4** (added after the 24.10 series). NAND device — our `.bin` is a **sysupgrade** image; first install from stock uses the OpenWrt **factory** image. [Device page](https://openwrt.org/toh/hwdata/edup/edup_ep-rt2983). |
 | ASUS **RT‑AX52** _(dev kit)_ | `mediatek/filogic` · `asus_rt-ax52` | **Dev‑kit / experimental** build on **OpenWrt 25.12.0** (aarch64) — the development reference board, published for testers. Not on the 24.10.3 base above; validate carefully. |
 
 ### First‑boot defaults (vendo appliance)
