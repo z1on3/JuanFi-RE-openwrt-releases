@@ -17,6 +17,9 @@ v1.1, and the RT‑AX52 dev‑kit). The ESP8266 coin‑acceptor node firmware is
 - **Linksys EA8300 (AC2200)** — `ipq40xx/generic`, profile `linksys_ea8300`
   (Qualcomm IPQ4019, tri‑radio, NAND). The shipped `.bin` is a **sysupgrade** image;
   first install from stock Linksys firmware uses the OpenWrt factory flow.
+- **Linksys WRT1900ACS** — `mvebu/cortexa9`, profile `linksys_wrt1900acs` (Marvell
+  Armada 385, 128 MB NAND / 512 MB RAM, dual‑firmware). Sysupgrade image; first
+  install from stock uses the OpenWrt factory image.
 
 ### Monetization: Router‑Pro / Free tiers
 - **Device tier awareness** — cache / sync / redeem with a tier badge; Free vs Pro.
