@@ -20,6 +20,9 @@ v1.1, and the RT‑AX52 dev‑kit). The ESP8266 coin‑acceptor node firmware is
 - **Linksys WRT1900ACS** — `mvebu/cortexa9`, profile `linksys_wrt1900acs` (Marvell
   Armada 385, 128 MB NAND / 512 MB RAM, dual‑firmware). Sysupgrade image; first
   install from stock uses the OpenWrt factory image.
+- **Linksys EA8300 also built on OpenWrt 23.05.5** (in addition to 24.10.3), because
+  upgrading this board to 24.10.x can fail to boot ([openwrt#17979](https://github.com/openwrt/openwrt/issues/17979)).
+  The **23.05.5** image is recommended for the EA8300; both are published.
 
 ### Monetization: Router‑Pro / Free tiers
 - **Device tier awareness** — cache / sync / redeem with a tier badge; Free vs Pro.

@@ -18,7 +18,8 @@ node** firmware.
 | Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.bin` | **beta 0.3** |
 | Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.bin` | **beta 0.3** |
 | Router image — **Newifi D2** (D‑Team) | `JuanFi-RE-newifi-d2-24.10.3-beta-0.3.bin` | **beta 0.3** |
-| Router image — Linksys **EA8300** (AC2200) | `JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.bin` | **beta 0.3** |
+| Router image — Linksys **EA8300** (AC2200) — OpenWrt **23.05.5** _(recommended)_ | `JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.bin` | **beta 0.3** |
+| Router image — Linksys **EA8300** (AC2200) — OpenWrt 24.10.3 | `JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.bin` | **beta 0.3** |
 | Router image — Linksys **WRT1900ACS** | `JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.bin` | **beta 0.3** |
 | Router image — ASUS **RT‑AX52** _(dev kit)_ | `JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.bin` | **beta 0.3** |
 | ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin` | **v1.0** |
@@ -40,17 +41,18 @@ sha256sum -c SHA256SUMS.txt
 
 ## Router images
 
-The four production router images are stock **OpenWrt 24.10.3**, with the JuanFi‑RE
-portal + admin app (PHP 8 + SQLite + nftables captive portal) baked into the rootfs.
-They self‑initialise on first boot — no license server, no phone‑home, no encrypted
-app blob. The RT‑AX52 is a separate dev‑kit build on OpenWrt 25.12.0.
+The production router images are stock **OpenWrt** (24.10.3 for most; the Linksys
+EA8300 is also offered on **23.05.5**, and the RT‑AX52 dev‑kit is on 25.12.0), with the
+JuanFi‑RE portal + admin app (PHP 8 + SQLite + nftables captive portal) baked into the
+rootfs. They self‑initialise on first boot — no license server, no phone‑home, no
+encrypted app blob.
 
 | Device | OpenWrt target / profile | Notes |
 |---|---|---|
 | Comfast **CF‑N5 v2** | `ramips/mt7621` · `zbtlink_zbt-wg3526-16m` | Not a mainline OpenWrt board; built on the ZBT **WG3526 (16 MB)** profile, which matches the CF‑N5's actual radios — **MT7603E (2.4 GHz) + MT7612E (5 GHz)** — so both bands work. |
 | Ruijie **RG‑EW1200G PRO v1.1** | `ramips/mt7621` · `ruijie_rg-ew1200g-pro-v1.1` | **Officially supported** by OpenWrt (since 24.10.0) — a first‑class device profile. |
 | **Newifi D2** (D‑Team) | `ramips/mt7621` · `d-team_newifi-d2` | **Officially supported** by OpenWrt (MT7621, 32 MB flash / 512 MB RAM). [Device page](https://openwrt.org/toh/hwdata/d-team/d-team_newifi_d2). |
-| Linksys **EA8300** (AC2200) | `ipq40xx/generic` · `linksys_ea8300` | **Officially supported** by OpenWrt (Qualcomm **IPQ4019**, tri‑radio, NAND). Dual‑partition device — first install from stock Linksys firmware needs the OpenWrt **factory** flow; our `.bin` is a **sysupgrade** image (flash once already on OpenWrt). [Device page](https://openwrt.org/toh/linksys/ea8300). |
+| Linksys **EA8300** (AC2200) | `ipq40xx/generic` · `linksys_ea8300` | **Officially supported** by OpenWrt (Qualcomm **IPQ4019**, tri‑radio, NAND, dual‑partition). Provided in **two builds: OpenWrt 23.05.5 (recommended) and 24.10.3**. ⚠️ Upgrading this board to 24.10.x can fail to boot / sysupgrade ([openwrt#17979](https://github.com/openwrt/openwrt/issues/17979)) — prefer the **23.05.5** image. Our `.bin` is a **sysupgrade** image; first install from stock Linksys firmware uses the OpenWrt **factory** flow. [Device page](https://openwrt.org/toh/linksys/ea8300). |
 | Linksys **WRT1900ACS** | `mvebu/cortexa9` · `linksys_wrt1900acs` | **Officially supported** by OpenWrt (Marvell **Armada 385**, ARMv7, 128 MB NAND / 512 MB RAM). Dual‑firmware (auto‑failover) device — first install from stock uses the OpenWrt **factory** image; our `.bin` is a **sysupgrade** image. [Device page](https://openwrt.org/toh/linksys/wrt1900acs). |
 | ASUS **RT‑AX52** _(dev kit)_ | `mediatek/filogic` · `asus_rt-ax52` | **Dev‑kit / experimental** build on **OpenWrt 25.12.0** (aarch64) — the development reference board, published for testers. Not on the 24.10.3 base above; validate carefully. |
 
