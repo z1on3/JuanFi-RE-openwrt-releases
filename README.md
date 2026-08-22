@@ -26,7 +26,8 @@ node** firmware.
 > **What's new in beta 0.3?** See [`CHANGELOG.md`](CHANGELOG.md). Highlights: subvendo /
 > node licensing, VLAN node binding, Router‑Pro / Free tiers, and cloud sync. The
 > ESP8266 node firmware is unchanged since v1.0 — no reflash needed if your node is
-> already on v1.0.
+> already on v1.0. Setting up a coin‑acceptor node? See the
+> [Node enrollment guide](NODE-ENROLLMENT.md).
 
 Verify downloads against [`SHA256SUMS.txt`](SHA256SUMS.txt):
 
@@ -95,6 +96,10 @@ failed.
 ---
 
 ## ESP8266 coin‑acceptor node
+
+> 📖 **New to nodes? Start with the [Node enrollment guide →](NODE-ENROLLMENT.md)** —
+> a step‑by‑step walkthrough (with screenshots) for getting a node onto Wi‑Fi and
+> pairing it with the router.
 
 The node needs **two** images flashed: the **firmware** and the **LittleFS**
 filesystem (the node's web setup UI is served only from LittleFS).
