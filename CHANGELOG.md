@@ -11,6 +11,13 @@ v1.1, and the RT‑AX52 dev‑kit). The ESP8266 coin‑acceptor node firmware is
 > **Reflash note:** the CF‑N5 v2 image is built on the `zbtlink_zbt-wg3526-16m`
 > profile (both radios). Coming from a different profile, use `sysupgrade -F -n`.
 
+### New device support
+- **Newifi D2** (D‑Team) — `ramips/mt7621`, profile `d-team_newifi-d2` (officially
+  supported by OpenWrt).
+- **Linksys EA8300 (AC2200)** — `ipq40xx/generic`, profile `linksys_ea8300`
+  (Qualcomm IPQ4019, tri‑radio, NAND). The shipped `.bin` is a **sysupgrade** image;
+  first install from stock Linksys firmware uses the OpenWrt factory flow.
+
 ### LuCI removed ()
 - The router images **no longer ship LuCI** (or any `luci-*` package). The CVFi
   admin is the only web UI; router‑level changes (new SSIDs, `sysupgrade`) are made

@@ -1,5 +1,7 @@
 47f436002a9ba141cadc4d4256029c42cce850442e9bd55639b985ef644e6f39 *JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.bin
 f600d5651a2df924f759eac9b70800ada7df07704d5593ead0a66558cd160247 *JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.bin
+943885ef8444a64017bf416bdaf685b19e4cb839ff0032cebabbec4f33fe671f *JuanFi-RE-newifi-d2-24.10.3-beta-0.3.bin
+28cebaaadd5c90859c524f204d02b488211c95494858f4e9561a04ea2033a263 *JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.bin
 6bd88c1dae1d3388cbe380f19345db52127fbd0230f8b75c34cb41061d246934 *JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.bin
 6b4f106c042d94e0fc47fa61c94356ac515860839383743b31dfac31785cf907 *esp8266-node/JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin
 73ecacd52e06919df719dea9312d6fa7c38ce7a5777ed19eec99174e5cb796f7 *esp8266-node/JuanFi-RE-ESP8266-node-littlefs-v1.0.bin

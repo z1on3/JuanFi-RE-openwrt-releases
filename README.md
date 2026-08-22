@@ -17,6 +17,8 @@ node** firmware.
 |---|---|---|
 | Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.bin` | **beta 0.3** |
 | Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.bin` | **beta 0.3** |
+| Router image — **Newifi D2** (D‑Team) | `JuanFi-RE-newifi-d2-24.10.3-beta-0.3.bin` | **beta 0.3** |
+| Router image — Linksys **EA8300** (AC2200) | `JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.bin` | **beta 0.3** |
 | Router image — ASUS **RT‑AX52** _(dev kit)_ | `JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.bin` | **beta 0.3** |
 | ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin` | **v1.0** |
 | ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v1.0.bin` | **v1.0** |
@@ -37,17 +39,19 @@ sha256sum -c SHA256SUMS.txt
 
 ## Router images
 
-The two `ramips/mt7621` router images are stock **OpenWrt 24.10.3**
-(`r28872-daca7c049b`, MediaTek MT7621, `mipsel_24kc`), with the JuanFi‑RE portal +
-admin app (PHP 8 + SQLite + nftables captive portal) baked into the rootfs. They
-self‑initialise on first boot — no license server, no phone‑home, no encrypted app
-blob. Each is ~11 MB and fits the 16 MB flash with headroom.
+The four production router images are stock **OpenWrt 24.10.3**, with the JuanFi‑RE
+portal + admin app (PHP 8 + SQLite + nftables captive portal) baked into the rootfs.
+They self‑initialise on first boot — no license server, no phone‑home, no encrypted
+app blob, **no LuCI** (the CVFi admin is the only web UI; manage the router over SSH).
+The RT‑AX52 is a separate dev‑kit build on OpenWrt 25.12.0.
 
-| Device | OpenWrt profile | Notes |
+| Device | OpenWrt target / profile | Notes |
 |---|---|---|
-| Comfast **CF‑N5 v2** | `zbtlink_zbt-wg3526-16m` | Not a mainline OpenWrt board; built on the ZBT **WG3526 (16 MB)** profile, which matches the CF‑N5's actual radios — **MT7603E (2.4 GHz) + MT7612E (5 GHz)** — so both bands work. |
-| Ruijie **RG‑EW1200G PRO v1.1** | `ruijie_rg-ew1200g-pro-v1.1` | **Officially supported** by OpenWrt (since 24.10.0) — a first‑class device profile. |
-| ASUS **RT‑AX52** _(dev kit)_ | `asus_rt-ax52` | **Dev‑kit / experimental** build on **OpenWrt 25.12.0** (`mediatek/filogic`, aarch64) — the development reference board, published for testers. Not on the 24.10.3 base above; validate carefully. |
+| Comfast **CF‑N5 v2** | `ramips/mt7621` · `zbtlink_zbt-wg3526-16m` | Not a mainline OpenWrt board; built on the ZBT **WG3526 (16 MB)** profile, which matches the CF‑N5's actual radios — **MT7603E (2.4 GHz) + MT7612E (5 GHz)** — so both bands work. |
+| Ruijie **RG‑EW1200G PRO v1.1** | `ramips/mt7621` · `ruijie_rg-ew1200g-pro-v1.1` | **Officially supported** by OpenWrt (since 24.10.0) — a first‑class device profile. |
+| **Newifi D2** (D‑Team) | `ramips/mt7621` · `d-team_newifi-d2` | **Officially supported** by OpenWrt (MT7621, 32 MB flash / 512 MB RAM). [Device page](https://openwrt.org/toh/hwdata/d-team/d-team_newifi_d2). |
+| Linksys **EA8300** (AC2200) | `ipq40xx/generic` · `linksys_ea8300` | **Officially supported** by OpenWrt (Qualcomm **IPQ4019**, tri‑radio, NAND). Dual‑partition device — first install from stock Linksys firmware needs the OpenWrt **factory** flow; our `.bin` is a **sysupgrade** image (flash once already on OpenWrt). [Device page](https://openwrt.org/toh/linksys/ea8300). |
+| ASUS **RT‑AX52** _(dev kit)_ | `mediatek/filogic` · `asus_rt-ax52` | **Dev‑kit / experimental** build on **OpenWrt 25.12.0** (aarch64) — the development reference board, published for testers. Not on the 24.10.3 base above; validate carefully. |
 
 ### First‑boot defaults (vendo appliance)
 
@@ -57,9 +61,10 @@ Each image comes up ready to run as a PisoWiFi gateway:
   served here.
 - **Wi‑Fi enabled on both bands** (2.4 GHz + 5 GHz), **open** (auth is the captive
   portal, not a Wi‑Fi key), SSID **`JuanFi Reloaded`**.
-- **LuCI** (OpenWrt's web admin) at **`http://10.0.0.1/cgi-bin/luci`** — log in as
-  `root` and set a password on first use. The captive portal owns `/`, so LuCI stays
-  reachable at `/cgi-bin/luci`.
+- **No LuCI.** As of beta 0.3 the images ship without LuCI () — the CVFi admin
+  is the only web UI. Router‑level changes (new SSIDs, `sysupgrade`) are made over
+  **SSH** (`ssh root@10.0.0.1`), which you enable/secure via the CLI at provisioning
+  time. Set a device access before exposing SSH.
 - **Admin console** at **`http://10.0.0.1/admin/`** ships with a default login —
   **username `admin`, password `admin`**. **Change it immediately** on the admin
   Settings page after first sign‑in.
