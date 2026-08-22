@@ -18,13 +18,6 @@ v1.1, and the RT‑AX52 dev‑kit). The ESP8266 coin‑acceptor node firmware is
   (Qualcomm IPQ4019, tri‑radio, NAND). The shipped `.bin` is a **sysupgrade** image;
   first install from stock Linksys firmware uses the OpenWrt factory flow.
 
-### LuCI removed ()
-- The router images **no longer ship LuCI** (or any `luci-*` package). The CVFi
-  admin is the only web UI; router‑level changes (new SSIDs, `sysupgrade`) are made
-  over **SSH**, enabled at provisioning time via the CLI. This also **fixes a
-  beta‑0.2 regression** where LuCI leaked into the images via an uncommitted build
-  script. Images are smaller as a result.
-
 ### Monetization: Router‑Pro / Free tiers
 - **Device tier awareness** — cache / sync / redeem with a tier badge; Free vs Pro.
 - **Free‑tier limits** — 10 concurrent active sessions and a branding lock.
@@ -43,9 +36,6 @@ v1.1, and the RT‑AX52 dev‑kit). The ESP8266 coin‑acceptor node firmware is
   portal auto‑select and node‑name branding; VLAN provisioning + enforcement;
   auto‑select the bound node by ingress VLAN subnet; searchable SSID combo in admin.
 
-### Cloud sync + remote control ()
-- Per‑operator cloud **auto‑register**; **config backup/restore**; a device **Cloud
-  Remote Control** command poller; **fail‑safe per‑node cloud deauthorization**.
 
 ### Sessions & time
 - **Immutable session‑expiry deadline** + operator **timezone** setting; clients
@@ -58,8 +48,6 @@ v1.1, and the RT‑AX52 dev‑kit). The ESP8266 coin‑acceptor node firmware is
   lifecycle** (remove, deterministic uploads, live previews); one full‑width hero
   logo/banner; logout + debug‑logs moved into the sidebar.
 
-### Housekeeping
-- Removed the dead `server/` Worker; operator docs now point at the mt‑api backend.
 
 ## beta 0.2 — 2026-08-16
 

@@ -23,11 +23,10 @@ node** firmware.
 | ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin` | **v1.0** |
 | ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v1.0.bin` | **v1.0** |
 
-> **What's new in beta 0.3?** See [`CHANGELOG.md`](CHANGELOG.md). Highlights: **LuCI
-> is now removed** from the router images (the CVFi admin is the only web UI; manage
-> the router over SSH), plus subvendo/node licensing, VLAN node binding, Router‑Pro /
-> Free tiers, and cloud sync. The ESP8266 node firmware is unchanged since v1.0 — no
-> reflash needed if your node is already on v1.0.
+> **What's new in beta 0.3?** See [`CHANGELOG.md`](CHANGELOG.md). Highlights: subvendo /
+> node licensing, VLAN node binding, Router‑Pro / Free tiers, and cloud sync. The
+> ESP8266 node firmware is unchanged since v1.0 — no reflash needed if your node is
+> already on v1.0.
 
 Verify downloads against [`SHA256SUMS.txt`](SHA256SUMS.txt):
 
@@ -42,8 +41,7 @@ sha256sum -c SHA256SUMS.txt
 The four production router images are stock **OpenWrt 24.10.3**, with the JuanFi‑RE
 portal + admin app (PHP 8 + SQLite + nftables captive portal) baked into the rootfs.
 They self‑initialise on first boot — no license server, no phone‑home, no encrypted
-app blob, **no LuCI** (the CVFi admin is the only web UI; manage the router over SSH).
-The RT‑AX52 is a separate dev‑kit build on OpenWrt 25.12.0.
+app blob. The RT‑AX52 is a separate dev‑kit build on OpenWrt 25.12.0.
 
 | Device | OpenWrt target / profile | Notes |
 |---|---|---|
@@ -61,10 +59,6 @@ Each image comes up ready to run as a PisoWiFi gateway:
   served here.
 - **Wi‑Fi enabled on both bands** (2.4 GHz + 5 GHz), **open** (auth is the captive
   portal, not a Wi‑Fi key), SSID **`JuanFi Reloaded`**.
-- **No LuCI.** As of beta 0.3 the images ship without LuCI () — the CVFi admin
-  is the only web UI. Router‑level changes (new SSIDs, `sysupgrade`) are made over
-  **SSH** (`ssh root@10.0.0.1`), which you enable/secure via the CLI at provisioning
-  time. Set a device access before exposing SSH.
 - **Admin console** at **`http://10.0.0.1/admin/`** ships with a default login —
   **username `admin`, password `admin`**. **Change it immediately** on the admin
   Settings page after first sign‑in.
@@ -72,9 +66,9 @@ Each image comes up ready to run as a PisoWiFi gateway:
 ### Flashing the router
 
 **There is no custom flashing** — these are standard OpenWrt sysupgrade images. Flash
-your device's image exactly as you would any OpenWrt image: via **LuCI → System →
-Backup / Flash Firmware → Flash new firmware**, or `sysupgrade` over SSH. Follow the
-official OpenWrt guide: <https://openwrt.org/docs/guide-user/installation/generic.flashing>
+your device's image exactly as you would any OpenWrt image: `sysupgrade` over SSH (or
+your device's usual OpenWrt flashing method). Follow the official OpenWrt guide:
+<https://openwrt.org/docs/guide-user/installation/generic.flashing>
 
 > **Switching profiles / first install:** if the device is currently running a
 > *different* OpenWrt board profile (e.g. an earlier build of this image on a
