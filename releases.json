@@ -11,55 +11,55 @@
           "board": "asus-rt-ax52",
           "openwrt": "25.12.0",
           "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.5.bin",
-          "sha256": "4ed37c06657961940ce1d94fbfb105cb1df3add65bff11d844060ffbb1890a43"
+          "sha256": "34529e8e1af9b10efdcfe24a508ce2b6b83fded7c3e113d4474cbbfc2e7b23d3"
         },
         {
           "board": "comfast-cf-n5-v2",
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.5.bin",
-          "sha256": "39acb2172dce56bf1c0ac834f37b7b0ee5182bae6ce33469b837a87e949bf67b"
+          "sha256": "e40622df039ad0316f785a5c3cc56301904077d9fa845cf0f4c801cf871473c1"
         },
         {
           "board": "edup-ep-rt2983",
           "openwrt": "25.12.4",
           "file": "JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.5.bin",
-          "sha256": "64346e2f929ec4a70b69d6741abbbd943fff44961d4c7c00a13534ccb8d71dea"
+          "sha256": "dd6d0a45a45e8246875679ffc52280d0d0f172398b7514ff5dd6003ade55a620"
         },
         {
           "board": "linksys-ea8300",
           "openwrt": "23.05.5",
           "file": "JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.5.bin",
-          "sha256": "e92587c20990349c7bf9ef93771dc4ce47b79818cb3fe7c0fc38b3fc71cf020f"
+          "sha256": "ead3669c5ca8e860972dc2e55936801ec7c8e0d5019a424b77eed86ba6845e2a"
         },
         {
           "board": "linksys-ea8300",
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.5.bin",
-          "sha256": "ce14930039ce031078387316de767571e197c1ef416d0271e08e2267549f3046"
+          "sha256": "0db720b22952a08906f6afd0bd143a926fdcbf3fdc8fe1813893c2e277540f2b"
         },
         {
           "board": "linksys-wrt1900acs",
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.5.bin",
-          "sha256": "44265e77ac15aaeb2f1b3f36bc3f3aa870a2680db8a84148cd8178dfe229e7b3"
+          "sha256": "63f46097f8e039d6c468697f2b54c64fd5502756208f0e9c7717b5fbb0951728"
         },
         {
           "board": "newifi-d2",
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-newifi-d2-24.10.3-beta-0.3.5.bin",
-          "sha256": "e23589299d82111b487dd3e3dd370a39dfb28e38e10da71eee05eea5edb8947e"
+          "sha256": "73637dd4843d5a05c5445ba75d3ba4f1f4aa5d9372ade441aac01e233ffda062"
         },
         {
           "board": "ruijie-rg-ew1200g-pro-v1.1",
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.5.bin",
-          "sha256": "f12a8d5c1b058949838e8fb3a3189fe1ffafa61f88f3f830aad5b4e9afc096cf"
+          "sha256": "2b4a5257e3bd25c2088124e0cd5125e32c49a79897083dfef3004c40462d2676"
         },
         {
           "board": "zbt-wg3526-16m",
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.3.5.bin",
-          "sha256": "39acb2172dce56bf1c0ac834f37b7b0ee5182bae6ce33469b837a87e949bf67b"
+          "sha256": "e40622df039ad0316f785a5c3cc56301904077d9fa845cf0f4c801cf871473c1"
         }
       ]
     },
