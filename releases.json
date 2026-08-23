@@ -1,0 +1,107 @@
+{
+  "latest": "0.3-beta",
+  "releases": [
+    {
+      "version": "0.3-beta",
+      "tag": "v0.3-beta",
+      "date": "2026-08-22",
+      "notes": "JuanFi Reloaded — Beta 0.3",
+      "assets": [
+        {
+          "board": "asus-rt-ax52",
+          "openwrt": "25.12.0",
+          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.bin",
+          "sha256": "3798a23490fefa0650afba0c04f4d1896e7da3f16a852a7daf3df9295ec154d0"
+        },
+        {
+          "board": "comfast-cf-n5-v2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.bin",
+          "sha256": "0d439aa5b1bf904a3c17127af11c1d4eba22c66578792d6f5daee8dc833f7474"
+        },
+        {
+          "board": "edup-ep-rt2983",
+          "openwrt": "25.12.4",
+          "file": "JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.bin",
+          "sha256": "a499dd383abca79342ddf92fbd373d2f747f3dfc3d9bd222a60b8816f59a756c"
+        },
+        {
+          "board": "linksys-ea8300",
+          "openwrt": "23.05.5",
+          "file": "JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.bin",
+          "sha256": "1eb646633ab5187ea3858b94fecbc74f4080a052a5d362541a1b487618bccb56"
+        },
+        {
+          "board": "linksys-ea8300",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.bin",
+          "sha256": "1306b19bdab07cbe0d07159f76df0cc68ac082e8527e820ffd90b570092c4375"
+        },
+        {
+          "board": "linksys-wrt1900acs",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.bin",
+          "sha256": "14ae9dff0c4702a4bebf5b3e9b52c91bb67c1b22d49327b41298b6e9f94813ec"
+        },
+        {
+          "board": "newifi-d2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-newifi-d2-24.10.3-beta-0.3.bin",
+          "sha256": "6d276b6e0f2661a914ada8f04c883adb4d2ecded613219e92db07e2566345fd0"
+        },
+        {
+          "board": "ruijie-rg-ew1200g-pro-v1.1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.bin",
+          "sha256": "3766903a8d284c308d35b7e898e6fc992682cc761210da6c16eb048f062a98f1"
+        }
+      ]
+    },
+    {
+      "version": "0.2-beta",
+      "tag": "v0.2-beta",
+      "date": "2026-08-16",
+      "notes": "JuanFi Reloaded — Beta 0.2",
+      "assets": [
+        {
+          "board": "asus-rt-ax52",
+          "openwrt": "25.12.0",
+          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.2.bin",
+          "sha256": "596e01d71734f6a589735bc8aefe1b0b5c8913ea6f0c3c23e5f05e17329e766d"
+        },
+        {
+          "board": "comfast-cf-n5-v2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.2.bin",
+          "sha256": "2c1a6148b10418c5b43604bee1aa8fe242449b35135e2b434591e0d7d0958c3c"
+        },
+        {
+          "board": "ruijie-rg-ew1200g-pro-v1.1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.2.bin",
+          "sha256": "c5d6bd5fbdf84ee7d819cc2a9755013096a745ff41590b75df3d84503a882c1e"
+        }
+      ]
+    },
+    {
+      "version": "0.1-beta",
+      "tag": "v0.1-beta",
+      "date": "2026-08-14",
+      "notes": "JuanFi Reloaded — Beta 0.1",
+      "assets": [
+        {
+          "board": "comfast-cf-n5-v2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.1.bin",
+          "sha256": "ad7f5bbcd09bd42731a8ec10e53e4c5ef53f7a0d96ced556d3f9ed2f73342923"
+        },
+        {
+          "board": "ruijie-rg-ew1200g-pro-v1.1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.1.bin",
+          "sha256": "c272bc6bf1c40889ce78d0d1e508a02c9166ff6abb50015a99ea0fb4003e9f2b"
+        }
+      ]
+    }
+  ]
+}
