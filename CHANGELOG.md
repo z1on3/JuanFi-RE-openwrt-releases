@@ -2,6 +2,18 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.3.5 — 2026-08-23
+
+- **Connectivity improvement** — closes a connectivity issue where a client could tunnel
+  traffic out over port 53 (DNS) before authenticating; unauthenticated DNS‑port
+  traffic is now blocked from leaving the hotspot.
+- **System Upgrade** — update the router firmware from the admin panel: upload a
+  firmware image or pick an OTA build, with automatic patch handling.
+- **Printable vouchers** — generate printable voucher sheets, with your print settings
+  saved for next time.
+
+The ESP8266 coin‑acceptor node firmware is **unchanged since v1.0** — no reflash needed.
+
 ## beta 0.3 — 2026-08-22
 
 A large feature release across all three router images (CF‑N5 v2, RG‑EW1200G PRO

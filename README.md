@@ -15,20 +15,20 @@ node** firmware.
 
 | Component | File | Version |
 |---|---|---|
-| Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.bin` | **beta 0.3** |
-| Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.bin` | **beta 0.3** |
-| Router image — **Newifi D2** (D‑Team) | `JuanFi-RE-newifi-d2-24.10.3-beta-0.3.bin` | **beta 0.3** |
-| Router image — Linksys **EA8300** (AC2200) — OpenWrt **23.05.5** _(recommended)_ | `JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.bin` | **beta 0.3** |
-| Router image — Linksys **EA8300** (AC2200) — OpenWrt 24.10.3 | `JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.bin` | **beta 0.3** |
-| Router image — Linksys **WRT1900ACS** | `JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.bin` | **beta 0.3** |
-| Router image — **EDUP EP‑RT2983** (Wi‑Fi 6) | `JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.bin` | **beta 0.3** |
-| Router image — ASUS **RT‑AX52** _(dev kit)_ | `JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.bin` | **beta 0.3** |
+| Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
+| Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
+| Router image — **Newifi D2** (D‑Team) | `JuanFi-RE-newifi-d2-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
+| Router image — Linksys **EA8300** (AC2200) — OpenWrt **23.05.5** _(recommended)_ | `JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.5.bin` | **beta 0.3.5** |
+| Router image — Linksys **EA8300** (AC2200) — OpenWrt 24.10.3 | `JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
+| Router image — Linksys **WRT1900ACS** | `JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
+| Router image — **EDUP EP‑RT2983** (Wi‑Fi 6) | `JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.5.bin` | **beta 0.3.5** |
+| Router image — ASUS **RT‑AX52** _(dev kit)_ | `JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.5.bin` | **beta 0.3.5** |
 | ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin` | **v1.0** |
 | ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v1.0.bin` | **v1.0** |
 
-> **What's new in beta 0.3?** See [`CHANGELOG.md`](CHANGELOG.md). Highlights: subvendo /
-> node licensing, VLAN node binding, Router‑Pro / Free tiers, and cloud sync. The
-> ESP8266 node firmware is unchanged since v1.0 — no reflash needed if your node is
+> **What's new in beta 0.3.5?** See [`CHANGELOG.md`](CHANGELOG.md): **Connectivity
+> protection**, an in‑product **System Upgrade** feature, and **printable vouchers**.
+> The ESP8266 node firmware is unchanged since v1.0 — no reflash needed if your node is
 > already on v1.0. Setting up a coin‑acceptor node? See the
 > [Node enrollment guide](NODE-ENROLLMENT.md).
 
