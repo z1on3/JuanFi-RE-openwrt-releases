@@ -12,6 +12,8 @@ There are two consoles involved, don't mix them up:
 | **Node** (the coin acceptor) | the node's own IP / setup AP | **JUANFI NODE — Sub‑Vendo Console** |
 | **Router** (the PisoWiFi) | `http://10.0.0.1/admin/` | **JUANFI RELOADED — PisoWiFi Console** |
 
+> 📹 **Video walkthrough:** [Watch the node enrollment walkthrough on Loom](https://www.loom.com/share/1200697e5eb0421db1ab0dcc2b9eff02)
+
 ---
 
 ## Prerequisites
