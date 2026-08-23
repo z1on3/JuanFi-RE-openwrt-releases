@@ -1,13 +1,3 @@
-{
-  "patches": [
-    {
-      "id": "0.3-001",
-      "seq": 1,
-      "target_version": "0.3-beta",
-      "desc": "Bump reported firmware version to 0.3.5-beta",
-      "url": "https://github.com/z1on3/JuanFi-RE-openwrt-releases/releases/download/patches/patch-0.3-001.tar.gz",
-      "sha256": "710c6b29873a9961b75d32ed9c7151984984721231a4a295764d1ffce63e78be",
-      "revoked": false
-    }
-  ]
-}
+{"patches":[
+{"id":"0.3-001","seq":1,"target_version":"0.3-beta","desc":"Bump reported firmware version to 0.3.5-beta","url":"https://github.com/z1on3/JuanFi-RE-openwrt-releases/releases/download/patches/patch-0.3-001.tar.gz","sha256":"710c6b29873a9961b75d32ed9c7151984984721231a4a295764d1ffce63e78be","revoked":false}
+]}
