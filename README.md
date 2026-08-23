@@ -16,6 +16,7 @@ node** firmware.
 | Component | File | Version |
 |---|---|---|
 | Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
+| Router image — **ZBT WG3526** (16 MB) | `JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
 | Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
 | Router image — **Newifi D2** (D‑Team) | `JuanFi-RE-newifi-d2-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
 | Router image — Linksys **EA8300** (AC2200) — OpenWrt **23.05.5** _(recommended)_ | `JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.5.bin` | **beta 0.3.5** |
@@ -51,6 +52,7 @@ encrypted app blob.
 | Device | OpenWrt target / profile | Notes |
 |---|---|---|
 | Comfast **CF‑N5 v2** | `ramips/mt7621` · `zbtlink_zbt-wg3526-16m` | Not a mainline OpenWrt board; built on the ZBT **WG3526 (16 MB)** profile, which matches the CF‑N5's actual radios — **MT7603E (2.4 GHz) + MT7612E (5 GHz)** — so both bands work. |
+| **ZBT WG3526** (16 MB) | `ramips/mt7621` · `zbtlink_zbt-wg3526-16m` | **Officially supported** by OpenWrt (MT7621, 16 MB flash, MT7603+MT7612 radios). This is the native device for the profile the CF‑N5 v2 borrows, so the image is identical — use this file on an actual WG3526. [Device page](https://openwrt.org/toh/zbtlink/zbt_wg3526). |
 | Ruijie **RG‑EW1200G PRO v1.1** | `ramips/mt7621` · `ruijie_rg-ew1200g-pro-v1.1` | **Officially supported** by OpenWrt (since 24.10.0) — a first‑class device profile. |
 | **Newifi D2** (D‑Team) | `ramips/mt7621` · `d-team_newifi-d2` | **Officially supported** by OpenWrt (MT7621, 32 MB flash / 512 MB RAM). [Device page](https://openwrt.org/toh/hwdata/d-team/d-team_newifi_d2). |
 | Linksys **EA8300** (AC2200) | `ipq40xx/generic` · `linksys_ea8300` | **Officially supported** by OpenWrt (Qualcomm **IPQ4019**, tri‑radio, NAND, dual‑partition). Provided in **two builds: OpenWrt 23.05.5 (recommended) and 24.10.3**. ⚠️ Upgrading this board to 24.10.x can fail to boot / sysupgrade ([openwrt#17979](https://github.com/openwrt/openwrt/issues/17979)) — prefer the **23.05.5** image. Our `.bin` is a **sysupgrade** image; first install from stock Linksys firmware uses the OpenWrt **factory** flow. [Device page](https://openwrt.org/toh/linksys/ea8300). |

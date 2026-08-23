@@ -11,6 +11,8 @@ All notable changes to the JuanFi‑RE flashable releases are documented here.
   firmware image or pick an OTA build, with automatic patch handling.
 - **Printable vouchers** — generate printable voucher sheets, with your print settings
   saved for next time.
+- **New device:** **ZBT WG3526 (16 MB)** image (`ramips/mt7621`,
+  `zbtlink_zbt-wg3526-16m`) — [device page](https://openwrt.org/toh/zbtlink/zbt_wg3526).
 
 The ESP8266 coin‑acceptor node firmware is **unchanged since v1.0** — no reflash needed.
 
