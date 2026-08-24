@@ -2,6 +2,18 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.3.6 — 2026-08-24
+
+- Minor bug fixes.
+- **Fixed the update process** — in‑place System Update / OTA flashing now completes
+  reliably (the flasher's loop‑device helper was missing on some boards, so a
+  firmware update could silently do nothing and revert). The System Update screen now
+  also shows the live upgrade log in a terminal view so you can watch it flash.
+- **Fixed timezone issues** — saving Session Policies no longer fails with an
+  "invalid timezone" error; the full time‑zone database now ships in the image.
+
+The ESP8266 coin‑acceptor node firmware is **unchanged since v1.0** — no reflash needed.
+
 ## beta 0.3.5 — 2026-08-23
 
 - **Connectivity improvement** — closes a connectivity issue where a client could tunnel
