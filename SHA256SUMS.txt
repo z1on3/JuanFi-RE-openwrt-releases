@@ -7,3 +7,5 @@ eb518c03e79045521793e24cf7be53b4a60e469f8800c41cd5ae857f37eb6aa0 *JuanFi-RE-comf
 71fb5d143513cd5ee7719aea1e69efc0b6b3c9d4d9f8e9d587ff0e4c63cabebf *JuanFi-RE-newifi-d2-24.10.3-beta-0.3.6.bin
 3b6e975536b994cd262c8656ac3bb3f5affe1401a5d987851f67e204150af227 *JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.6.bin
 eb518c03e79045521793e24cf7be53b4a60e469f8800c41cd5ae857f37eb6aa0 *JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.3.6.bin
+6b4f106c042d94e0fc47fa61c94356ac515860839383743b31dfac31785cf907 *JuanFi-RE-ESP8266-node-Wireless-firmware-v1.0.bin
+73ecacd52e06919df719dea9312d6fa7c38ce7a5777ed19eec99174e5cb796f7 *JuanFi-RE-ESP8266-node-littlefs-v1.0.bin
