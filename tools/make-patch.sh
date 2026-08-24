@@ -20,6 +20,22 @@ ID="$1"; TARGET="$2"; DIR="$3"; DESC="${4:-}"
 	echo "usage: make-patch.sh <id> <target_version> <payload_dir> [\"description\"]" >&2; exit 2; }
 [ -d "$DIR/files" ] || { echo "error: $DIR/files/ is required (the file payload)" >&2; exit 2; }
 
+# Auto-stamp the admin cache-busters (?v=) from each asset's content hash if this
+# payload carries the admin bundle, so a patched admin.js/admin.css can never be
+# served stale from a browser cache (no manual ?v= bump). Mirrors the image build's
+# firmware/openwrt/tools/stamp-cachebust.sh.
+_html="$DIR/files/www/admin/index.html"
+if [ -f "$_html" ]; then
+	for _a in admin.js admin.css; do
+		_f="$DIR/files/www/admin/assets/$_a"
+		[ -f "$_f" ] || continue
+		_h=$(sha256sum "$_f" 2>/dev/null | cut -c1-10)
+		[ -n "$_h" ] || continue
+		sed -i "s#\(assets/$_a\)?v=[0-9A-Za-z]*#\1?v=$_h#g" "$_html"
+		echo "stamp-cachebust: $_a?v=$_h" >&2
+	done
+fi
+
 OUT="patch-$ID.tar.gz"
 # Include files/ plus any hooks that exist. Deterministic-ish; the sha is what matters.
 SET="files"
