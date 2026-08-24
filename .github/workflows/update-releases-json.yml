@@ -22,7 +22,11 @@ jobs:
   regen:
     runs-on: ubuntu-latest
     steps:
+      # A `release` event checks out the tag (detached HEAD), which cannot be
+      # pushed. Explicitly check out main so the auto-commit lands on a branch.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: '20'

@@ -1,6 +1,68 @@
 {
-  "latest": "0.3.5-beta",
+  "latest": "0.3.6-beta",
   "releases": [
+    {
+      "version": "0.3.6-beta",
+      "tag": "v0.3.6-beta",
+      "date": "2026-08-24",
+      "notes": "JuanFi Reloaded — Beta 0.3.6",
+      "assets": [
+        {
+          "board": "asus-rt-ax52",
+          "openwrt": "25.12.0",
+          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.6.bin",
+          "sha256": "f85c1c9cc6a0e5171f3a6ef2ffce28f9f4149707fcc2c5897dcb1b2e5c948365"
+        },
+        {
+          "board": "comfast-cf-n5-v2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.6.bin",
+          "sha256": "eb518c03e79045521793e24cf7be53b4a60e469f8800c41cd5ae857f37eb6aa0"
+        },
+        {
+          "board": "edup-ep-rt2983",
+          "openwrt": "25.12.4",
+          "file": "JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.6.bin",
+          "sha256": "4f2afc8b30cb2f2b9559598fa63ac051f681968e1ca1e088d5adb1360564996d"
+        },
+        {
+          "board": "linksys-ea8300",
+          "openwrt": "23.05.5",
+          "file": "JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.6.bin",
+          "sha256": "0b2b9f85b6d879c38da8aba1aafd196980ce9d91e3740e84bc19d7fdbea34075"
+        },
+        {
+          "board": "linksys-ea8300",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.6.bin",
+          "sha256": "4af93358b09abb98c17b0827f295a472ec25c14bfbdddae79d931585b61871a8"
+        },
+        {
+          "board": "linksys-wrt1900acs",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.6.bin",
+          "sha256": "70c9bcfb99653e7123c38b435c698937cf0d9b59c5e28ea89d3471f47d087bc7"
+        },
+        {
+          "board": "newifi-d2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-newifi-d2-24.10.3-beta-0.3.6.bin",
+          "sha256": "71fb5d143513cd5ee7719aea1e69efc0b6b3c9d4d9f8e9d587ff0e4c63cabebf"
+        },
+        {
+          "board": "ruijie-rg-ew1200g-pro-v1.1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.6.bin",
+          "sha256": "3b6e975536b994cd262c8656ac3bb3f5affe1401a5d987851f67e204150af227"
+        },
+        {
+          "board": "zbt-wg3526-16m",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.3.6.bin",
+          "sha256": "eb518c03e79045521793e24cf7be53b4a60e469f8800c41cd5ae857f37eb6aa0"
+        }
+      ]
+    },
     {
       "version": "0.3.5-beta",
       "tag": "v0.3.5-beta",
