@@ -1,2 +1,6 @@
 # Flashable binaries are distributed as GitHub Release assets, not committed.
 *.bin
+
+# Patch tarballs are built locally (tools/make-patch.sh) and uploaded as GitHub
+# Release assets under the 'patches' tag; only patches.json is committed.
+patch-*.tar.gz
