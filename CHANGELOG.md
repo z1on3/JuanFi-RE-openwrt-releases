@@ -12,7 +12,11 @@ All notable changes to the JuanFi‑RE flashable releases are documented here.
 - **Fixed timezone issues** — saving Session Policies no longer fails with an
   "invalid timezone" error; the full time‑zone database now ships in the image.
 
-The ESP8266 coin‑acceptor node firmware is **unchanged since v1.0** — no reflash needed.
+The ESP8266 coin‑acceptor node firmware is updated to **v0.2**: a guided first‑run
+**Setup wizard** (secure → join Wi‑Fi → router link → pair → coin acceptor) that
+replaces the bare admin page on a freshly‑flashed node, plus a captive‑portal fix
+so the setup page opens directly instead of a blank screen that needed a reload.
+**Reflash both node images** (Wireless firmware **and** LittleFS UI) to get it.
 
 ## beta 0.3.5 — 2026-08-23
 
