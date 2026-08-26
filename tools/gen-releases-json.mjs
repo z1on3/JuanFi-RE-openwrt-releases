@@ -24,15 +24,19 @@ const gh = (args) => execFileSync('gh', args, { encoding: 'utf8', maxBuffer: 64 
 // board slugs contain dashes; the OpenWrt version is the N.N.N token before -beta-.
 const IMG_RE = /^JuanFi-RE-(.+)-(\d+\.\d+\.\d+)-beta-(.+)\.bin$/;
 
-// Per-device presentation metadata (display name + product photo), keyed by the
-// board slug parsed out of the image filename above. Emitted both as a top-level
-// `devices` catalog AND inlined on each asset so the website can render a device
-// card with `<img src=asset.image>` directly. Images are public hotlinks (OpenWrt
-// wiki / manufacturer CDNs, verified reachable); blank `image` = none sourced yet
-// (host one in release/img/ and point here). The router OTA ignores these fields.
+// Per-device presentation metadata (display name, product photo, optional warning
+// note), keyed by the board slug parsed out of the image filename above. Emitted both
+// as a top-level `devices` catalog AND inlined on each asset so the website can render
+// a device card with `<img src=asset.image>` and show `asset.note`. Images are public
+// hotlinks (OpenWrt wiki / manufacturer CDNs, verified reachable); blank `image` = none
+// sourced yet (host one in release/img/ and point here). `note` is a per-device caveat
+// the site can badge (experimental / limited support); omit it when there's nothing to
+// flag. The router OTA picker ignores all three fields (reads only board/openwrt/file/
+// sha256), so this is presentation-only and safe to add.
+const EAP225_NOTE = '⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first.';
 const DEVICES = {
   'asus-rt-ax52':               { name: 'ASUS RT-AX52',               image: 'https://image.alza.cz/products/Asus23_022/Asus23_022-01.jpg' },
-  'asus-rt-ac68u':              { name: 'ASUS RT-AC68U',              image: 'https://dlcdnwebimgs.asus.com/gain/6670e848-ba84-47e0-97d5-fd076ac3a137/w185' },
+  'asus-rt-ac68u':              { name: 'ASUS RT-AC68U',              image: 'https://dlcdnwebimgs.asus.com/gain/6670e848-ba84-47e0-97d5-fd076ac3a137/w185', note: '⚠ Wi-Fi unsupported on this Broadcom board in OpenWrt — routes over Ethernet only and cannot serve its own hotspot. Use it wired or paired with an external AP node. First flash from stock ASUS uses the .trx (this image is that .trx under a .bin name).' },
   'comfast-cf-n5-v2':           { name: 'Comfast CF-N5 v2',           image: '' },
   'comfast-cf-ew71-v2':         { name: 'Comfast CF-EW71 v2',         image: '' },
   'comfast-cf-ew72-v2':         { name: 'Comfast CF-EW72 v2',         image: 'https://openwrt.org/_media/media/comfast/cf-ew72-v2_vendor.jpg' },
@@ -47,12 +51,12 @@ const DEVICES = {
   // TP-Link EAP225 single-port family — TP-Link's CDN blocks hotlinking (HTTP 403),
   // so no working public img src; host a photo in release/img/ to fill these.
   // (No eap225-v2: v2 hardware has no separate OpenWrt profile and flashes the v1 image.)
-  'eap225-v1':                  { name: 'TP-Link EAP225 v1',          image: '' },
-  'eap225-v3':                  { name: 'TP-Link EAP225 v3',          image: '' },
-  'eap225-v4':                  { name: 'TP-Link EAP225 v4',          image: '' },
-  'eap225-outdoor-v1':          { name: 'TP-Link EAP225-Outdoor v1',  image: '' },
-  'eap225-outdoor-v3':          { name: 'TP-Link EAP225-Outdoor v3',  image: '' },
-  'eap225-wall-v2':             { name: 'TP-Link EAP225-Wall v2',     image: '' },
+  'eap225-v1':                  { name: 'TP-Link EAP225 v1',          image: '', note: EAP225_NOTE },
+  'eap225-v3':                  { name: 'TP-Link EAP225 v3',          image: '', note: EAP225_NOTE },
+  'eap225-v4':                  { name: 'TP-Link EAP225 v4',          image: '', note: EAP225_NOTE },
+  'eap225-outdoor-v1':          { name: 'TP-Link EAP225-Outdoor v1',  image: '', note: EAP225_NOTE },
+  'eap225-outdoor-v3':          { name: 'TP-Link EAP225-Outdoor v3',  image: '', note: EAP225_NOTE },
+  'eap225-wall-v2':             { name: 'TP-Link EAP225-Wall v2',     image: '', note: EAP225_NOTE },
 };
 
 function parseSums(text) {
@@ -94,8 +98,8 @@ for (const rel of releases) {
     const [, board, openwrt] = m;
     const sha256 = sums[name];
     if (!sha256) { continue; }           // no checksum -> unsafe to offer
-    const meta = DEVICES[board] || { name: board, image: '' };
-    assets.push({ board, name: meta.name, openwrt, file: name, sha256, image: meta.image });
+    const meta = DEVICES[board] || { name: board, image: '', note: '' };
+    assets.push({ board, name: meta.name, openwrt, file: name, sha256, image: meta.image || '', note: meta.note || '' });
   }
   if (!assets.length) { continue; }
 
@@ -111,5 +115,9 @@ for (const rel of releases) {
 }
 
 if (out.releases.length) { out.latest = out.releases[0].version; }
-out.devices = DEVICES; // top-level catalog: board slug -> { name, image }
+// top-level catalog: board slug -> { name, image, note } (normalized so every entry
+// has all three keys, even when the DEVICES map omitted an empty image/note).
+out.devices = Object.fromEntries(
+  Object.entries(DEVICES).map(([k, v]) => [k, { name: v.name, image: v.image || '', note: v.note || '' }]),
+);
 process.stdout.write(JSON.stringify(out, null, 2) + '\n');
