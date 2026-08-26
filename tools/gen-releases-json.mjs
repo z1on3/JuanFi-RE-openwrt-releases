@@ -24,6 +24,37 @@ const gh = (args) => execFileSync('gh', args, { encoding: 'utf8', maxBuffer: 64 
 // board slugs contain dashes; the OpenWrt version is the N.N.N token before -beta-.
 const IMG_RE = /^JuanFi-RE-(.+)-(\d+\.\d+\.\d+)-beta-(.+)\.bin$/;
 
+// Per-device presentation metadata (display name + product photo), keyed by the
+// board slug parsed out of the image filename above. Emitted both as a top-level
+// `devices` catalog AND inlined on each asset so the website can render a device
+// card with `<img src=asset.image>` directly. Images are public hotlinks (OpenWrt
+// wiki / manufacturer CDNs, verified reachable); blank `image` = none sourced yet
+// (host one in release/img/ and point here). The router OTA ignores these fields.
+const DEVICES = {
+  'asus-rt-ax52':               { name: 'ASUS RT-AX52',               image: 'https://image.alza.cz/products/Asus23_022/Asus23_022-01.jpg' },
+  'asus-rt-ac68u':              { name: 'ASUS RT-AC68U',              image: 'https://dlcdnwebimgs.asus.com/gain/6670e848-ba84-47e0-97d5-fd076ac3a137/w185' },
+  'comfast-cf-n5-v2':           { name: 'Comfast CF-N5 v2',           image: '' },
+  'comfast-cf-ew71-v2':         { name: 'Comfast CF-EW71 v2',         image: '' },
+  'comfast-cf-ew72-v2':         { name: 'Comfast CF-EW72 v2',         image: 'https://openwrt.org/_media/media/comfast/cf-ew72-v2_vendor.jpg' },
+  'edup-ep-rt2983':             { name: 'EDUP EP-RT2983',             image: '' },
+  'linksys-ea8300':             { name: 'Linksys EA8300',             image: 'https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg' },
+  'linksys-wrt1900acs':         { name: 'Linksys WRT1900ACS',         image: 'https://openwrt.org/_media/media/linksys/wrt1900acs.jpg' },
+  'mercusys-mr70x-v1':          { name: 'Mercusys MR70X v1',          image: 'https://static.mercusys.com/product-image/01_large20201223072930.jpg' },
+  'newifi-d2':                  { name: 'Newifi D2',                  image: '' },
+  'ruijie-rg-ew1200g-pro-v1.1': { name: 'Ruijie RG-EW1200G PRO v1.1', image: 'https://eo-sgp-cos.ruijie.com/background/other/2023-10-27/7b9d778c2293490a993760bc68f52396.png' },
+  'ruijie-rg-ew3200gx-pro':     { name: 'Ruijie RG-EW3200GX PRO',     image: 'https://eo-sgp-cos.ruijie.com/background/other/2023-10-30/b2b529094b4d432fa998eba11a445b19.png' },
+  'zbt-wg3526-16m':             { name: 'ZBT WG3526 (16M)',           image: '' },
+  // TP-Link EAP225 single-port family — TP-Link's CDN blocks hotlinking (HTTP 403),
+  // so no working public img src; host a photo in release/img/ to fill these.
+  // (No eap225-v2: v2 hardware has no separate OpenWrt profile and flashes the v1 image.)
+  'eap225-v1':                  { name: 'TP-Link EAP225 v1',          image: '' },
+  'eap225-v3':                  { name: 'TP-Link EAP225 v3',          image: '' },
+  'eap225-v4':                  { name: 'TP-Link EAP225 v4',          image: '' },
+  'eap225-outdoor-v1':          { name: 'TP-Link EAP225-Outdoor v1',  image: '' },
+  'eap225-outdoor-v3':          { name: 'TP-Link EAP225-Outdoor v3',  image: '' },
+  'eap225-wall-v2':             { name: 'TP-Link EAP225-Wall v2',     image: '' },
+};
+
 function parseSums(text) {
   // Lines: "<sha256> *<filename>" (or two spaces). Basename may include a dir.
   const map = {};
@@ -63,7 +94,8 @@ for (const rel of releases) {
     const [, board, openwrt] = m;
     const sha256 = sums[name];
     if (!sha256) { continue; }           // no checksum -> unsafe to offer
-    assets.push({ board, openwrt, file: name, sha256 });
+    const meta = DEVICES[board] || { name: board, image: '' };
+    assets.push({ board, name: meta.name, openwrt, file: name, sha256, image: meta.image });
   }
   if (!assets.length) { continue; }
 
@@ -79,4 +111,5 @@ for (const rel of releases) {
 }
 
 if (out.releases.length) { out.latest = out.releases[0].version; }
+out.devices = DEVICES; // top-level catalog: board slug -> { name, image }
 process.stdout.write(JSON.stringify(out, null, 2) + '\n');

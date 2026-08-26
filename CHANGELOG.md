@@ -2,6 +2,27 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.0 — 2026-08-26
+
+Expanded router hardware support, plus a new single‑port access‑point mode.
+
+- **New supported routers:**
+  - **Mercusys MR70X v1 / MR1800X** (AX1800, MT7621)
+  - **Ruijie RG‑EW3200GX PRO** (Wi‑Fi 6, MT7622)
+  - **Comfast CF‑EW72 v2** and **CF‑EW71 v2** (outdoor PoE APs)
+- **TP‑Link EAP225 family — single‑port AP‑as‑gateway** (v1, v3, v4, Outdoor v1,
+  Outdoor v3, Wall v2). The lone PoE Ethernet port becomes the WAN uplink and the
+  built‑in Wi‑Fi is the 10.0.0.1/24 hotspot LAN. ⚠️ **Experimental** — not yet
+  boot‑tested on hardware; flash only on a device you can recover. (v2 hardware flashes
+  the v1 image; v5 has no working OpenWrt Wi‑Fi driver and is not provided.)
+- **ASUS RT‑AC68U** — provided, but ⚠️ **Wi‑Fi is unsupported** on this Broadcom board in
+  OpenWrt. It routes over Ethernet only and **cannot serve its own hotspot** — use it
+  wired or paired with an external AP node.
+- Build‑pipeline hardening: one‑image‑per‑device with continue‑on‑error, and correct
+  handling of Broadcom `.trx` images.
+
+The ESP8266 coin‑acceptor node firmware is unchanged from 0.3.6 (**v0.2**).
+
 ## beta 0.3.6 — 2026-08-24
 
 - Minor bug fixes.
