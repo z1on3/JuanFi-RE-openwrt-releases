@@ -40,7 +40,7 @@
           "openwrt": "25.12.5",
           "file": "JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.0.bin",
           "sha256": "bfccc679037b119cd14c82838cb4bcf77633dcc549d0a4dce54ba50fadd32bd9",
-          "image": "https://openwrt.org/_media/media/comfast/cf-ew72-v2_vendor.jpg",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-ew72-v2.webp",
           "note": ""
         },
         {
@@ -49,7 +49,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.0.bin",
           "sha256": "1f3d1a9efc5ed745d80979623bb58999720491628e66883ade09fc1309118328",
-          "image": "",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
           "note": ""
         },
         {
@@ -121,7 +121,7 @@
           "openwrt": "23.05.5",
           "file": "JuanFi-RE-linksys-ea8300-23.05.5-beta-0.4.0.bin",
           "sha256": "c9a9460bad36d32cd12b1f99f5cbdf7d9392ce6ca5387dabe683fa24c94d2d87",
-          "image": "https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -130,7 +130,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-ea8300-24.10.3-beta-0.4.0.bin",
           "sha256": "b6f37ca8005a288fed2eff32f4d226c35d23341e9f45f94757c6f74a33865b67",
-          "image": "https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -139,7 +139,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.4.0.bin",
           "sha256": "815482a9b6fc642c9dbb3bf6d4fe5b005f314b7be483dcb630f84b32bf9d0e07",
-          "image": "https://openwrt.org/_media/media/linksys/wrt1900acs.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -210,7 +210,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.6.bin",
           "sha256": "eb518c03e79045521793e24cf7be53b4a60e469f8800c41cd5ae857f37eb6aa0",
-          "image": "",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
           "note": ""
         },
         {
@@ -228,7 +228,7 @@
           "openwrt": "23.05.5",
           "file": "JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.6.bin",
           "sha256": "0b2b9f85b6d879c38da8aba1aafd196980ce9d91e3740e84bc19d7fdbea34075",
-          "image": "https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -237,7 +237,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.6.bin",
           "sha256": "4af93358b09abb98c17b0827f295a472ec25c14bfbdddae79d931585b61871a8",
-          "image": "https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -246,7 +246,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.6.bin",
           "sha256": "70c9bcfb99653e7123c38b435c698937cf0d9b59c5e28ea89d3471f47d087bc7",
-          "image": "https://openwrt.org/_media/media/linksys/wrt1900acs.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -299,7 +299,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.5.bin",
           "sha256": "52e483d7dbf4ebf9207a3f0476df36b44f2bd3a2817a8328e3f0cc27079ffcb1",
-          "image": "",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
           "note": ""
         },
         {
@@ -317,7 +317,7 @@
           "openwrt": "23.05.5",
           "file": "JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.5.bin",
           "sha256": "dfae6b4bb18d1b75d6fa279b8418e6ec5447dc688831c292f733a0191057d18f",
-          "image": "https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -326,7 +326,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.5.bin",
           "sha256": "feaee4c2b50f1fd060ecc42cbc1a5fede096f935b7f6b21322e312172e7b0752",
-          "image": "https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -335,7 +335,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.5.bin",
           "sha256": "bf0eaac71bc578848fca720f076e5bcce17f68a86eb6dbbc69181c069ec30628",
-          "image": "https://openwrt.org/_media/media/linksys/wrt1900acs.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -388,7 +388,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.bin",
           "sha256": "0d439aa5b1bf904a3c17127af11c1d4eba22c66578792d6f5daee8dc833f7474",
-          "image": "",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
           "note": ""
         },
         {
@@ -406,7 +406,7 @@
           "openwrt": "23.05.5",
           "file": "JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.bin",
           "sha256": "1eb646633ab5187ea3858b94fecbc74f4080a052a5d362541a1b487618bccb56",
-          "image": "https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -415,7 +415,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.bin",
           "sha256": "1306b19bdab07cbe0d07159f76df0cc68ac082e8527e820ffd90b570092c4375",
-          "image": "https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -424,7 +424,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.bin",
           "sha256": "14ae9dff0c4702a4bebf5b3e9b52c91bb67c1b22d49327b41298b6e9f94813ec",
-          "image": "https://openwrt.org/_media/media/linksys/wrt1900acs.jpg",
+          "image": "",
           "note": ""
         },
         {
@@ -468,7 +468,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.2.bin",
           "sha256": "2c1a6148b10418c5b43604bee1aa8fe242449b35135e2b434591e0d7d0958c3c",
-          "image": "",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
           "note": ""
         },
         {
@@ -494,7 +494,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.1.bin",
           "sha256": "ad7f5bbcd09bd42731a8ec10e53e4c5ef53f7a0d96ced556d3f9ed2f73342923",
-          "image": "",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
           "note": ""
         },
         {
@@ -522,7 +522,7 @@
     },
     "comfast-cf-n5-v2": {
       "name": "Comfast CF-N5 v2",
-      "image": "",
+      "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
       "note": ""
     },
     "comfast-cf-ew71-v2": {
@@ -532,7 +532,7 @@
     },
     "comfast-cf-ew72-v2": {
       "name": "Comfast CF-EW72 v2",
-      "image": "https://openwrt.org/_media/media/comfast/cf-ew72-v2_vendor.jpg",
+      "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-ew72-v2.webp",
       "note": ""
     },
     "edup-ep-rt2983": {
@@ -542,12 +542,12 @@
     },
     "linksys-ea8300": {
       "name": "Linksys EA8300",
-      "image": "https://openwrt.org/_media/media/linksys/linksys-ea8300-ac2200.jpg",
+      "image": "",
       "note": ""
     },
     "linksys-wrt1900acs": {
       "name": "Linksys WRT1900ACS",
-      "image": "https://openwrt.org/_media/media/linksys/wrt1900acs.jpg",
+      "image": "",
       "note": ""
     },
     "mercusys-mr70x-v1": {
