@@ -17,24 +17,6 @@
           "note": "⚠ Wi-Fi unsupported on this Broadcom board in OpenWrt — routes over Ethernet only and cannot serve its own hotspot. Use it wired or paired with an external AP node. First flash from stock ASUS uses the .trx (this image is that .trx under a .bin name)."
         },
         {
-          "board": "comfast-cf-n5-v2",
-          "name": "Comfast CF-N5 v2",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.1.bin",
-          "sha256": "639f61e1240e131552f8f2db9b040932e71ebba959fa1422793ed66957f5f304",
-          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
-          "note": ""
-        },
-        {
-          "board": "comfast-cf-ew72-v2",
-          "name": "Comfast CF-EW72 v2",
-          "openwrt": "25.12.5",
-          "file": "JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.1.bin",
-          "sha256": "ab1697a0f8d2672121fbdabf76169dca9de564f8d15b6c4cb1a83dd3d52306df",
-          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-ew72-v2.webp",
-          "note": ""
-        },
-        {
           "board": "asus-rt-ax52",
           "name": "ASUS RT-AX52",
           "openwrt": "25.12.0",
@@ -50,6 +32,24 @@
           "file": "JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.1.bin",
           "sha256": "1b0407d47008a9ffb4f3be217b820e76fce57441ff1fb048b47f48c73acf79a4",
           "image": "",
+          "note": ""
+        },
+        {
+          "board": "comfast-cf-ew72-v2",
+          "name": "Comfast CF-EW72 v2",
+          "openwrt": "25.12.5",
+          "file": "JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.1.bin",
+          "sha256": "ab1697a0f8d2672121fbdabf76169dca9de564f8d15b6c4cb1a83dd3d52306df",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-ew72-v2.webp",
+          "note": ""
+        },
+        {
+          "board": "comfast-cf-n5-v2",
+          "name": "Comfast CF-N5 v2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.1.bin",
+          "sha256": "639f61e1240e131552f8f2db9b040932e71ebba959fa1422793ed66957f5f304",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
           "note": ""
         },
         {
@@ -149,6 +149,42 @@
           "file": "JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.1.bin",
           "sha256": "6be206629460eeeb7182c4554accffe5a7d9c00b8fc308416af796159723ad3d",
           "image": "https://static.mercusys.com/product-image/01_large20201223072930.jpg",
+          "note": ""
+        },
+        {
+          "board": "newifi-d2",
+          "name": "Newifi D2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-newifi-d2-24.10.3-beta-0.4.1.bin",
+          "sha256": "57185db56d625d238085a0bc7a7efb9a9443970e333725c1c05510948b5508d4",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "ruijie-rg-ew1200g-pro-v1.1",
+          "name": "Ruijie RG-EW1200G PRO v1.1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.4.1.bin",
+          "sha256": "25a9e5760b2e034eaaec55739f18fee495db393baeec191b7f29ffd40d9f16bf",
+          "image": "https://eo-sgp-cos.ruijie.com/background/other/2023-10-27/7b9d778c2293490a993760bc68f52396.png",
+          "note": ""
+        },
+        {
+          "board": "ruijie-rg-ew3200gx-pro",
+          "name": "Ruijie RG-EW3200GX PRO",
+          "openwrt": "24.10.5",
+          "file": "JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.1.bin",
+          "sha256": "550a81766a7bcae191c77c14ea6bc1a6434c03f0857c580f38b6db038869487f",
+          "image": "https://eo-sgp-cos.ruijie.com/background/other/2023-10-30/b2b529094b4d432fa998eba11a445b19.png",
+          "note": ""
+        },
+        {
+          "board": "zbt-wg3526-16m",
+          "name": "ZBT WG3526 (16M)",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.4.1.bin",
+          "sha256": "639f61e1240e131552f8f2db9b040932e71ebba959fa1422793ed66957f5f304",
+          "image": "",
           "note": ""
         }
       ]
