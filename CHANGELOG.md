@@ -2,7 +2,23 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
-## beta 0.4.0 — 2026-08-26
+## beta 0.4.1 — 2026-08-27
+
+**Fixed System Update flashing.** In‑place System Update / OTA and manual‑image
+flashing now complete reliably instead of occasionally rebooting back onto the old
+firmware. Root cause: the flasher ran as a child of a wrapper process that lingered
+into the bootloader hand‑off (procd stage‑2) and could abort the write; it now
+replaces itself (`exec sysupgrade`) so the upgrade proceeds exactly like a CLI/LuCI
+flash. The System Update screen also drops live polling for a simple
+"Flashing… please wait for reboot" dialog, and an applied hotfix now reports to the
+dashboard within seconds instead of on the next hourly heartbeat. Your settings and
+data are preserved across the update.
+
+Because **0.4.0 was never published** (it shipped with the flashing bug above),
+0.4.1 also carries everything from 0.4.0 below — if you're coming from 0.3.6 you get
+all of it in one update.
+
+## beta 0.4.0 — 2026-08-26 *(unreleased — folded into 0.4.1)*
 
 Expanded router hardware support, plus a new single‑port access‑point mode.
 
