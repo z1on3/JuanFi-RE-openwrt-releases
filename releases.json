@@ -8,15 +8,6 @@
       "notes": "JuanFi Reloaded — Beta 0.4.2",
       "assets": [
         {
-          "board": "eap225-v1",
-          "name": "TP-Link EAP225 v1",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-v1-24.10.3-beta-0.4.2.bin",
-          "sha256": "84ec8485f7dcaeb9e09f76948bac23a8695b8702299968c7b4ad5d75d88a9710",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
           "board": "eap225-v3",
           "name": "TP-Link EAP225 v3",
           "openwrt": "24.10.3",
@@ -141,6 +132,42 @@
           "sha256": "c7539c2076827cc5d5ba333ad250f918447eef037c68ae7955e738c2e4c6d06b",
           "image": "",
           "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-outdoor-v3",
+          "name": "TP-Link EAP225-Outdoor v3",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.2.bin",
+          "sha256": "9b38b95bacce8997b61f115203a5fd5fe35d067f2f148fd879c868aa69dbf108",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "comfast-cf-ew71-v2",
+          "name": "Comfast CF-EW71 v2",
+          "openwrt": "25.12.2",
+          "file": "JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.2.bin",
+          "sha256": "5780b1db0bcfcf8b12922045acbdb20a498ded5481cb7874adfd3e022750fe5d",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "asus-rt-ac68u",
+          "name": "ASUS RT-AC68U",
+          "openwrt": "24.10.5",
+          "file": "JuanFi-RE-asus-rt-ac68u-24.10.5-beta-0.4.2.bin",
+          "sha256": "2ee38c34dad0e37d22856305a738165b541bc46ff2d82fbd94742aec0ff74e27",
+          "image": "https://dlcdnwebimgs.asus.com/gain/6670e848-ba84-47e0-97d5-fd076ac3a137/w185",
+          "note": "⚠ Wi-Fi unsupported on this Broadcom board in OpenWrt — routes over Ethernet only and cannot serve its own hotspot. Use it wired or paired with an external AP node. First flash from stock ASUS uses the .trx (this image is that .trx under a .bin name)."
+        },
+        {
+          "board": "asus-rt-ax52",
+          "name": "ASUS RT-AX52",
+          "openwrt": "25.12.0",
+          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.2.bin",
+          "sha256": "6fe39f6d57ba7292c0c5ea65595b2d9dafc0af72f9b592667660d9a8bdb52d20",
+          "image": "https://image.alza.cz/products/Asus23_022/Asus23_022-01.jpg",
+          "note": ""
         }
       ]
     },
