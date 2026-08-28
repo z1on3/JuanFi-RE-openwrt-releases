@@ -116,7 +116,10 @@ SET="files"
 [ -f "$DIR/post.sh" ] && SET="$SET post.sh"
 [ -f "$DIR/rollback.sh" ] && SET="$SET rollback.sh"
 
-( cd "$DIR" && tar czf - $SET ) > "$OUT"
+# Git Bash on Windows exposes every staged file to tar as 0777. Force a
+# deterministic executable archive mode; post.sh fixes the crontab to 0600 on
+# the target before cron is restarted.
+( cd "$DIR" && tar czf - --mode=755 $SET ) > "$OUT"
 SHA=$(sha256sum "$OUT" | awk '{print $1}')
 
 echo "built: $OUT ($(wc -c < "$OUT") bytes)" >&2
