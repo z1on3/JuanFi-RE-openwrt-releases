@@ -98,6 +98,18 @@ if [ -f "$_html" ]; then
 	done
 fi
 
+# Tar archives preserve the mode of the staging files. On Windows/plain-file
+# workflows that mode is commonly 0644, which makes cron-invoked shell scripts
+# fail with no useful indication. Normalize runtime payloads at build time so
+# every published patch carries executable scripts and a trusted crontab.
+for _f in "$DIR"/files/usr/bin/* "$DIR"/files/www/api/scripts/*.sh; do
+	[ -f "$_f" ] || continue
+	chmod 755 "$_f"
+done
+[ -f "$DIR/files/etc/crontabs/root" ] && chmod 600 "$DIR/files/etc/crontabs/root"
+[ -f "$DIR/post.sh" ] && chmod 755 "$DIR/post.sh"
+[ -f "$DIR/rollback.sh" ] && chmod 755 "$DIR/rollback.sh"
+
 OUT="patch-$ID.tar.gz"
 # Include files/ plus any hooks that exist. Deterministic-ish; the sha is what matters.
 SET="files"
