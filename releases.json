@@ -89,33 +89,6 @@
           "note": ""
         },
         {
-          "board": "ruijie-rg-ew1200g-pro-v1.1",
-          "name": "Ruijie RG-EW1200G PRO v1.1",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.4.2.bin",
-          "sha256": "362619886191849e34d11743b87cb1d5fb1ed7c562f5af80a1797744e1373f42",
-          "image": "https://eo-sgp-cos.ruijie.com/background/other/2023-10-27/7b9d778c2293490a993760bc68f52396.png",
-          "note": ""
-        },
-        {
-          "board": "ruijie-rg-ew3200gx-pro",
-          "name": "Ruijie RG-EW3200GX PRO",
-          "openwrt": "24.10.5",
-          "file": "JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.2.bin",
-          "sha256": "74d575f36d214b486264cb9dd06e62618651503d357246e79f3dd36a688af2d2",
-          "image": "https://eo-sgp-cos.ruijie.com/background/other/2023-10-30/b2b529094b4d432fa998eba11a445b19.png",
-          "note": ""
-        },
-        {
-          "board": "zbt-wg3526-16m",
-          "name": "ZBT WG3526 (16M)",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.4.2.bin",
-          "sha256": "b9ce7538c615edc8b46a785c071020198906f57eae2b3a341850f6fde9976d7f",
-          "image": "",
-          "note": ""
-        },
-        {
           "board": "eap225-outdoor-v3",
           "name": "TP-Link EAP225-Outdoor v3",
           "openwrt": "24.10.3",
@@ -177,6 +150,33 @@
           "sha256": "c7539c2076827cc5d5ba333ad250f918447eef037c68ae7955e738c2e4c6d06b",
           "image": "",
           "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "ruijie-rg-ew1200g-pro-v1.1",
+          "name": "Ruijie RG-EW1200G PRO v1.1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.4.2.bin",
+          "sha256": "362619886191849e34d11743b87cb1d5fb1ed7c562f5af80a1797744e1373f42",
+          "image": "https://eo-sgp-cos.ruijie.com/background/other/2023-10-27/7b9d778c2293490a993760bc68f52396.png",
+          "note": ""
+        },
+        {
+          "board": "ruijie-rg-ew3200gx-pro",
+          "name": "Ruijie RG-EW3200GX PRO",
+          "openwrt": "24.10.5",
+          "file": "JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.2.bin",
+          "sha256": "74d575f36d214b486264cb9dd06e62618651503d357246e79f3dd36a688af2d2",
+          "image": "https://eo-sgp-cos.ruijie.com/background/other/2023-10-30/b2b529094b4d432fa998eba11a445b19.png",
+          "note": ""
+        },
+        {
+          "board": "zbt-wg3526-16m",
+          "name": "ZBT WG3526 (16M)",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.4.2.bin",
+          "sha256": "b9ce7538c615edc8b46a785c071020198906f57eae2b3a341850f6fde9976d7f",
+          "image": "",
+          "note": ""
         }
       ]
     },
