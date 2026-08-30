@@ -1,10 +1,17 @@
-# Flashable binaries are distributed as GitHub Release assets, not committed.
+# Flashable binaries are built locally and distributed as GitHub Release assets,
+# not committed. Build output goes in firmware/ to keep the repo root clean.
+firmware/
 *.bin
-.payload-*/
 
-# Patch tarballs are built locally (tools/make-patch.sh) and uploaded as GitHub
-# Release assets under the 'patches' tag; only patches.json is committed.
+# Patch tarballs are built locally (release-tools/make-patch.sh) and uploaded as
+# GitHub Release assets under the 'patches' tag; only patches.json is committed.
+# Build output goes in patch/.
+patch/
 patch-*.tar.gz
+
+# Patch build staging dirs.
+payload-*/
+.payload-*/
 
 # Private manifest-signing keys are deliberately offline-only.
 keys/
