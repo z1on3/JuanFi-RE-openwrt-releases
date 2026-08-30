@@ -10,9 +10,7 @@ subscriptions, pay‑bill captive screen) and a new admin WAN / Internet page wi
 live throughput chart and guided uplink configuration — SQM/per‑client shaping is
 now correctly re‑applied after a WAN change.
 
-**Router Pro reliability.** Router Pro entitlement now self‑heals and
-backfills a entitlement on boot/WAN‑ifup and is verified before honoring
-`device_pro`, closing a reliability gap; this is now enabled by default.
+**Router Pro reliability.** Router Pro entitlement is now more robust across reboots and network changes.
 The admin UI also gets Router Pro upsell prompts on Free‑tier routers and a
 corrected Free‑tier node badge.
 
@@ -81,9 +79,7 @@ so the setup page opens directly instead of a blank screen that needed a reload.
 
 ## beta 0.3.5 — 2026-08-23
 
-- **Connectivity improvement** — closes a connectivity issue where a client could tunnel
-  traffic out over port 53 (DNS) before authenticating; unauthenticated DNS‑port
-  traffic is now blocked from leaving the hotspot.
+- **Connectivity improvement** — hardened captive‑portal handling for more reliable pre‑authentication behavior.
 - **System Upgrade** — update the router firmware from the admin panel: upload a
   firmware image or pick an OTA build, with automatic patch handling.
 - **Printable vouchers** — generate printable voucher sheets, with your print settings
