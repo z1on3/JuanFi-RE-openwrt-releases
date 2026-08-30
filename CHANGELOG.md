@@ -2,6 +2,30 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.3 — 2026-08-30
+
+**PPPoE Server and admin WAN / Internet page.** Routers can now run their own
+PPPoE server for downstream billing, with a new admin PPPoE Server page (plans,
+subscriptions, pay‑bill captive screen) and a new admin WAN / Internet page with a
+live throughput chart and guided uplink configuration — SQM/per‑client shaping is
+now correctly re‑applied after a WAN change.
+
+**Router Pro reliability.** Router Pro entitlement now self‑heals and
+backfills a entitlement on boot/WAN‑ifup and is verified before honoring
+`device_pro`, closing a reliability gap; this is now enabled by default.
+The admin UI also gets Router Pro upsell prompts on Free‑tier routers and a
+corrected Free‑tier node badge.
+
+**Fixes:** OTA checksum lookup now tolerates `./`‑prefixed `SHA256SUMS` lines;
+voucher "Expiry (days)" now converts to an absolute timestamp on generate instead
+of drifting; VLAN trunk‑port picker no longer shows duplicate ports; base button
+CSS and Vouchers UX cleanup; native file‑input picker button is now themed.
+
+**Admin SPA refactor.** The whole admin single‑page app was componentized (shared
+combobox CSS moved into the core stylesheet, per‑session page‑asset caching, a nav
+loader, and fixes for cross‑module scope errors introduced by the refactor) —
+internal, no user‑visible behavior change beyond a snappier nav.
+
 ## beta 0.4.1 — 2026-08-27
 
 **Fixed System Update flashing.** In‑place System Update / OTA and manual‑image
