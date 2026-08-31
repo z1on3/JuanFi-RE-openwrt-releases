@@ -2,6 +2,13 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.4 — 2026-08-31
+
+**Storage and reliability.** Improved on‑device storage handling so Remote
+Management no longer uses up flash space on low‑storage routers, plus tidier
+cleanup of update backups. Expanded the on‑router diagnostics bundle for faster
+support.
+
 ## beta 0.4.3 — 2026-08-30
 
 **PPPoE Server and admin WAN / Internet page.** Routers can now run their own
