@@ -8,105 +8,6 @@
       "notes": "JuanFi Reloaded — Beta 0.4.4",
       "assets": [
         {
-          "board": "eap225-outdoor-v1",
-          "name": "TP-Link EAP225-Outdoor v1",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.4.bin",
-          "sha256": "814e80b0565269f6d9050a4f1259a99e636a79f5a8e6bf2d39f82464a1a29ee2",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-outdoor-v3",
-          "name": "TP-Link EAP225-Outdoor v3",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.4.bin",
-          "sha256": "9ab670c823671ea2cc1c20fb2f09de323ebdf69239fd6f3c384dee99a806b9cd",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-v1",
-          "name": "TP-Link EAP225 v1",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-v1-24.10.3-beta-0.4.4.bin",
-          "sha256": "193e425604038cc495073de239c5444a159d3e9ea02a993f655e01dbd4017659",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-v3",
-          "name": "TP-Link EAP225 v3",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-v3-24.10.3-beta-0.4.4.bin",
-          "sha256": "a6cb22c0fb6f800acf451b9c8e56308fb3f0663bd4fce5864ac083118621f2a5",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-v4",
-          "name": "TP-Link EAP225 v4",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-v4-24.10.3-beta-0.4.4.bin",
-          "sha256": "4fda11ce8114b74d8ea6cecc9c009cb936e2d0530e806c92838bcc58dec287b1",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-wall-v2",
-          "name": "TP-Link EAP225-Wall v2",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.4.bin",
-          "sha256": "eae8bda4ddd262b6ef9df0d77e8793c86427b0a378c120335aed068595061b26",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "edup-ep-rt2983",
-          "name": "EDUP EP-RT2983",
-          "openwrt": "25.12.4",
-          "file": "JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.4.4.bin",
-          "sha256": "dd172dd8a7a333117fc97bc23c422160b3fd970db5805dba066d5667bf55c0e2",
-          "image": "",
-          "note": ""
-        },
-        {
-          "board": "linksys-ea8300",
-          "name": "Linksys EA8300",
-          "openwrt": "23.05.5",
-          "file": "JuanFi-RE-linksys-ea8300-23.05.5-beta-0.4.4.bin",
-          "sha256": "de17bdc62a9d672ba2bd52db603c5dbf65e79ed7c34edd1944476f8541afd753",
-          "image": "",
-          "note": ""
-        },
-        {
-          "board": "linksys-ea8300",
-          "name": "Linksys EA8300",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-linksys-ea8300-24.10.3-beta-0.4.4.bin",
-          "sha256": "1dd38dd630a4da307949306c786532bdaf00cf1c3fa6835adf59915a783c3b98",
-          "image": "",
-          "note": ""
-        },
-        {
-          "board": "linksys-wrt1900acs",
-          "name": "Linksys WRT1900ACS",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.4.4.bin",
-          "sha256": "0e0a0f0cb15d64b2074d6a78dba3d35e28afd63fc7b698a71ea3d66190bc9727",
-          "image": "",
-          "note": ""
-        },
-        {
-          "board": "mercusys-mr70x-v1",
-          "name": "Mercusys MR70X v1",
-          "openwrt": "25.12.5",
-          "file": "JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.4.bin",
-          "sha256": "f5e0a93f1613f6278b54534c049960a2b45720e83242d07ce8d838e6ceb27805",
-          "image": "https://static.mercusys.com/product-image/01_large20201223072930.jpg",
-          "note": ""
-        },
-        {
           "board": "newifi-d2",
           "name": "Newifi D2",
           "openwrt": "24.10.3",
@@ -141,6 +42,105 @@
           "sha256": "a4de0c6b8e48a748908f9c1c8c910c0cd57e03c4fffca1606bf2a57b19ac40cf",
           "image": "",
           "note": ""
+        },
+        {
+          "board": "comfast-cf-n5-v2",
+          "name": "Comfast CF-N5 v2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.4.bin",
+          "sha256": "a4de0c6b8e48a748908f9c1c8c910c0cd57e03c4fffca1606bf2a57b19ac40cf",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
+          "note": ""
+        },
+        {
+          "board": "comfast-cf-ew71-v2",
+          "name": "Comfast CF-EW71 v2",
+          "openwrt": "25.12.2",
+          "file": "JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.4.bin",
+          "sha256": "40f9af35eb7c37c58762ce7d8cb1c70e90efa37fa9d6451a28127670d5a8a3c1",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "comfast-cf-ew72-v2",
+          "name": "Comfast CF-EW72 v2",
+          "openwrt": "25.12.5",
+          "file": "JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.4.bin",
+          "sha256": "02dd7e348d0c86843b33ea1f36efbc5feb5e8ebc1c7fc63ca80ebeca4457e68a",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-ew72-v2.webp",
+          "note": ""
+        },
+        {
+          "board": "asus-rt-ac68u",
+          "name": "ASUS RT-AC68U",
+          "openwrt": "24.10.5",
+          "file": "JuanFi-RE-asus-rt-ac68u-24.10.5-beta-0.4.4.bin",
+          "sha256": "84817ef7f7ae8174070b232d8dadbdee2fc83d331bf089e11daf13d847c8310f",
+          "image": "https://dlcdnwebimgs.asus.com/gain/6670e848-ba84-47e0-97d5-fd076ac3a137/w185",
+          "note": "⚠ Wi-Fi unsupported on this Broadcom board in OpenWrt — routes over Ethernet only and cannot serve its own hotspot. Use it wired or paired with an external AP node. First flash from stock ASUS uses the .trx (this image is that .trx under a .bin name)."
+        },
+        {
+          "board": "asus-rt-ax52",
+          "name": "ASUS RT-AX52",
+          "openwrt": "25.12.0",
+          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.4.bin",
+          "sha256": "f3bff7ebf2b87a361155cd8bd52bc7ed2d92ae8f9827c14b08135847a1cdb88c",
+          "image": "https://image.alza.cz/products/Asus23_022/Asus23_022-01.jpg",
+          "note": ""
+        },
+        {
+          "board": "eap225-outdoor-v3",
+          "name": "TP-Link EAP225-Outdoor v3",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.4.bin",
+          "sha256": "9ab670c823671ea2cc1c20fb2f09de323ebdf69239fd6f3c384dee99a806b9cd",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-v3",
+          "name": "TP-Link EAP225 v3",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-v3-24.10.3-beta-0.4.4.bin",
+          "sha256": "a6cb22c0fb6f800acf451b9c8e56308fb3f0663bd4fce5864ac083118621f2a5",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-outdoor-v1",
+          "name": "TP-Link EAP225-Outdoor v1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.4.bin",
+          "sha256": "814e80b0565269f6d9050a4f1259a99e636a79f5a8e6bf2d39f82464a1a29ee2",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-v1",
+          "name": "TP-Link EAP225 v1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-v1-24.10.3-beta-0.4.4.bin",
+          "sha256": "193e425604038cc495073de239c5444a159d3e9ea02a993f655e01dbd4017659",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-v4",
+          "name": "TP-Link EAP225 v4",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-v4-24.10.3-beta-0.4.4.bin",
+          "sha256": "4fda11ce8114b74d8ea6cecc9c009cb936e2d0530e806c92838bcc58dec287b1",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-wall-v2",
+          "name": "TP-Link EAP225-Wall v2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.4.bin",
+          "sha256": "eae8bda4ddd262b6ef9df0d77e8793c86427b0a378c120335aed068595061b26",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
         }
       ]
     },
