@@ -8,51 +8,6 @@
       "notes": "JuanFi Reloaded — Beta 0.4.4",
       "assets": [
         {
-          "board": "asus-rt-ac68u",
-          "name": "ASUS RT-AC68U",
-          "openwrt": "24.10.5",
-          "file": "JuanFi-RE-asus-rt-ac68u-24.10.5-beta-0.4.4.bin",
-          "sha256": "84817ef7f7ae8174070b232d8dadbdee2fc83d331bf089e11daf13d847c8310f",
-          "image": "https://dlcdnwebimgs.asus.com/gain/6670e848-ba84-47e0-97d5-fd076ac3a137/w185",
-          "note": "⚠ Wi-Fi unsupported on this Broadcom board in OpenWrt — routes over Ethernet only and cannot serve its own hotspot. Use it wired or paired with an external AP node. First flash from stock ASUS uses the .trx (this image is that .trx under a .bin name)."
-        },
-        {
-          "board": "asus-rt-ax52",
-          "name": "ASUS RT-AX52",
-          "openwrt": "25.12.0",
-          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.4.bin",
-          "sha256": "f3bff7ebf2b87a361155cd8bd52bc7ed2d92ae8f9827c14b08135847a1cdb88c",
-          "image": "https://image.alza.cz/products/Asus23_022/Asus23_022-01.jpg",
-          "note": ""
-        },
-        {
-          "board": "comfast-cf-ew71-v2",
-          "name": "Comfast CF-EW71 v2",
-          "openwrt": "25.12.2",
-          "file": "JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.4.bin",
-          "sha256": "40f9af35eb7c37c58762ce7d8cb1c70e90efa37fa9d6451a28127670d5a8a3c1",
-          "image": "",
-          "note": ""
-        },
-        {
-          "board": "comfast-cf-ew72-v2",
-          "name": "Comfast CF-EW72 v2",
-          "openwrt": "25.12.5",
-          "file": "JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.4.bin",
-          "sha256": "02dd7e348d0c86843b33ea1f36efbc5feb5e8ebc1c7fc63ca80ebeca4457e68a",
-          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-ew72-v2.webp",
-          "note": ""
-        },
-        {
-          "board": "comfast-cf-n5-v2",
-          "name": "Comfast CF-N5 v2",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.4.bin",
-          "sha256": "a4de0c6b8e48a748908f9c1c8c910c0cd57e03c4fffca1606bf2a57b19ac40cf",
-          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
-          "note": ""
-        },
-        {
           "board": "eap225-outdoor-v1",
           "name": "TP-Link EAP225-Outdoor v1",
           "openwrt": "24.10.3",
