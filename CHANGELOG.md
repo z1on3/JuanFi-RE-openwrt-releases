@@ -2,6 +2,23 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.5 — 2026-09-02
+
+**Vouchers and session validity.** A voucher's expiry now defines the paid
+session's validity window, and batch expiry uses a days/hours/minutes picker.
+Used vouchers can now be deleted, with a confirmation warning.
+
+**Portal time handling.** Pausing a session now freezes the clock and restores the
+full remaining time on resume; the portal shows the full validity window as the
+Expiration; and paused time plus bandwidth settings now carry across a device
+transfer.
+
+**Free time.** Free‑time access moved into Captive Portal settings, with a new
+weekly availability schedule and configurable claim frequency.
+
+**Branding.** Custom portal logos can now display full‑width, and operators can
+post an Announcement message on the portal.
+
 ## beta 0.4.4 — 2026-08-31
 
 **Storage and reliability.** Improved on‑device storage handling so Remote
