@@ -129,7 +129,32 @@ esptool.py --port <PORT> --baud 460800 write_flash 0x0 JuanFi-RE-ESP8266-node-Wi
 esptool.py --port <PORT> --baud 460800 write_flash 0x300000 JuanFi-RE-ESP8266-node-littlefs-v0.2.bin
 ```
 
-Foolproof alternative that computes the offset for you: `pio run -e esp12e_wireless -t uploadfs`.
+Or let PlatformIO place the FS for you: `pio run -e esp12e_wireless -t uploadfs`.
+
+#### GUI alternative — NodeMCU PyFlasher (no command line)
+
+[**NodeMCU PyFlasher**](https://github.com/marcelstoer/nodemcu-pyflasher/releases)
+(`NodeMCU-PyFlasher.exe`) wraps `esptool`. Use **5.x** — it has the
+**Offset Address** field both bins need. Flash **twice**, firmware first:
+
+![NodeMCU PyFlasher — annotated steps](docs/img/pyflasher-node.png)
+
+1. **Serial port** ➊ — the node's COM port (**Reload** if empty; install the
+   CP2102/CH340 USB‑serial driver first if none appears).
+2. **NodeMCU firmware** ➋ — Browse to the **firmware** bin
+   (`JuanFi-RE-ESP8266-node-Wireless-firmware-v0.2.bin`).
+3. **Offset Address** ➌ — `0x000000` for the firmware.
+4. **Baud rate** ➍ `115200` · **Flash mode** ➎ `Dual I/O (DIO)` ·
+   **Erase flash** ➏ `yes` on a first‑ever flash (else `no`).
+5. Click **Flash NodeMCU** ➐ and wait for success in the console.
+6. **Second pass:** load the **LittleFS** bin
+   (`JuanFi-RE-ESP8266-node-littlefs-v0.2.bin`) in ➋ with
+   **Offset Address ➌ = `0x300000`**, set Erase flash to `no`, and Flash again.
+
+> ⚠️ The LittleFS bin **must** go at `0x300000`, not `0x0`. On the first pass the
+> firmware sits at `0x0`; if you leave the offset at `0x0` for the second pass you
+> will overwrite the firmware. Older PyFlasher builds (pre‑5.0) have no offset
+> field — use `esptool` above instead.
 
 ### Setting up the node after flashing
 
