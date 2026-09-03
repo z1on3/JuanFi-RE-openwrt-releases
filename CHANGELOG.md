@@ -2,6 +2,14 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## node firmware v0.3 — 2026-09-04
+
+**Wired nodes.** The ESP8266 coin‑acceptor node firmware can now connect to the
+router by **Ethernet cable** (a W5500 module) in addition to Wi‑Fi. A **single
+firmware image** covers both — choose **Wi‑Fi** or **Ethernet** in the first‑run
+Setup wizard, which then confirms the link and fills in the right coin‑acceptor
+pins for you. Reflash **both** node images (firmware **and** LittleFS UI) to get it.
+
 ## beta 0.4.55 — 2026-09-03
 
 **Scheduling.** Added an optional weekly auto‑restart schedule in Settings so the

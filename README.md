@@ -24,14 +24,15 @@ node** firmware.
 | Router image — Linksys **WRT1900ACS** | `JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
 | Router image — **EDUP EP‑RT2983** (Wi‑Fi 6) | `JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.5.bin` | **beta 0.3.5** |
 | Router image — ASUS **RT‑AX52** _(dev kit)_ | `JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.5.bin` | **beta 0.3.5** |
-| ESP8266 node — Wireless firmware | `JuanFi-RE-ESP8266-node-Wireless-firmware-v0.2.bin` | **v0.2** |
-| ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v0.2.bin` | **v0.2** |
+| ESP8266 node — firmware (Wi‑Fi + Ethernet) | `JuanFi-RE-ESP8266-node-firmware-v0.3.bin` | **v0.3** |
+| ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v0.3.bin` | **v0.3** |
 
 > **What's new in beta 0.3.5?** See [`CHANGELOG.md`](CHANGELOG.md): **Connectivity
 > protection**, an in‑product **System Upgrade** feature, and **printable vouchers**.
-> The ESP8266 node firmware is now **v0.2** — a guided first‑run **Setup wizard**
-> plus a captive‑portal fix; reflash **both** node images (Wireless firmware **and**
-> LittleFS UI). Setting up a coin‑acceptor node? See the
+> The ESP8266 node firmware is now **v0.3** — a **single image that supports both
+> Wi‑Fi and wired (Ethernet) nodes**, chosen in the first‑run **Setup wizard**;
+> reflash **both** node images (firmware **and** LittleFS UI). Setting up a
+> coin‑acceptor node? See the
 > [Node enrollment guide](NODE-ENROLLMENT.md).
 
 Verify downloads against [`SHA256SUMS.txt`](SHA256SUMS.txt):
@@ -113,9 +114,11 @@ failed.
 The node needs **two** images flashed: the **firmware** and the **LittleFS**
 filesystem (the node's web setup UI is served only from LittleFS).
 
-- **Wireless** firmware — node joins the router Wi‑Fi as a station.
+- **One firmware for both node types** — pick **Wi‑Fi** (node joins the router
+  Wi‑Fi as a station) or **Ethernet** (node connects by LAN cable via a W5500
+  module) in the Setup wizard. Same bin for either.
 - Flash the LittleFS image **before** provisioning; re‑flashing it later wipes the
-  saved Wi‑Fi/token/pin config.
+  saved node‑type/Wi‑Fi/token/pin config.
 
 ### Flashing the node (esptool, ESP‑12E / NodeMCU)
 
@@ -124,12 +127,12 @@ layout, so the FS goes at **`0x300000`** (the FS bin is exactly `0xFA000` = 1,02
 
 ```sh
 # firmware (first bin) → 0x0
-esptool.py --port <PORT> --baud 460800 write_flash 0x0 JuanFi-RE-ESP8266-node-Wireless-firmware-v0.2.bin
+esptool.py --port <PORT> --baud 460800 write_flash 0x0 JuanFi-RE-ESP8266-node-firmware-v0.3.bin
 # LittleFS (second bin) → 0x300000  (NOT 0x200000 — that is the 2 MB-FS layout)
-esptool.py --port <PORT> --baud 460800 write_flash 0x300000 JuanFi-RE-ESP8266-node-littlefs-v0.2.bin
+esptool.py --port <PORT> --baud 460800 write_flash 0x300000 JuanFi-RE-ESP8266-node-littlefs-v0.3.bin
 ```
 
-Or let PlatformIO place the FS for you: `pio run -e esp12e_wireless -t uploadfs`.
+Or let PlatformIO place the FS for you: `pio run -e esp12e -t uploadfs`.
 
 #### GUI alternative — NodeMCU PyFlasher (no command line)
 
@@ -142,13 +145,13 @@ Or let PlatformIO place the FS for you: `pio run -e esp12e_wireless -t uploadfs`
 1. **Serial port** ➊ — the node's COM port (**Reload** if empty; install the
    CP2102/CH340 USB‑serial driver first if none appears).
 2. **NodeMCU firmware** ➋ — Browse to the **firmware** bin
-   (`JuanFi-RE-ESP8266-node-Wireless-firmware-v0.2.bin`).
+   (`JuanFi-RE-ESP8266-node-firmware-v0.3.bin`).
 3. **Offset Address** ➌ — `0x000000` for the firmware.
 4. **Baud rate** ➍ `115200` · **Flash mode** ➎ `Dual I/O (DIO)` ·
    **Erase flash** ➏ `yes` on a first‑ever flash (else `no`).
 5. Click **Flash NodeMCU** ➐ and wait for success in the console.
 6. **Second pass:** load the **LittleFS** bin
-   (`JuanFi-RE-ESP8266-node-littlefs-v0.2.bin`) in ➋ with
+   (`JuanFi-RE-ESP8266-node-littlefs-v0.3.bin`) in ➋ with
    **Offset Address ➌ = `0x300000`**, set Erase flash to `no`, and Flash again.
 
 > ⚠️ The LittleFS bin **must** go at `0x300000`, not `0x0`. On the first pass the
