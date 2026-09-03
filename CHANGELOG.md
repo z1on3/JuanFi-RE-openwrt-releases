@@ -2,6 +2,14 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.55 — 2026-09-03
+
+**Scheduling.** Added an optional weekly auto‑restart schedule in Settings so the
+router can reboot itself on a chosen day and time.
+
+**Networking.** New VLANs now start serving addresses right away, without needing
+a reboot.
+
 ## beta 0.4.5 — 2026-09-02
 
 **Vouchers and session validity.** A voucher's expiry now defines the paid
