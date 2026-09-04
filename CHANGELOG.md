@@ -2,6 +2,17 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.56 — 2026-09-04
+
+**Portal.** The Insert Coin screen now shows the time you've earned updating live
+as you insert coins.
+
+**Vouchers.** Voucher codes are now matched case‑insensitively and redemption was
+hardened for more reliable, consistent results.
+
+**Remote Management.** Now off by default, with a new toggle to start it
+automatically on boot when you do enable it.
+
 ## node firmware v0.3 — 2026-09-04
 
 **Wired nodes.** The ESP8266 coin‑acceptor node firmware can now connect to the

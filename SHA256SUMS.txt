@@ -5,6 +5,7 @@ b6bdbcc9dcf3dd15d82ea2c9bdcf2f4fcf7bc13840bc8014b0680974df869a18  JuanFi-RE-asus
 d3d5d9deafc2e2f7a272ff1bf879f4793a5ff812134566fc13228339177cf007  JuanFi-RE-asus-rt-ac68u-24.10.5-beta-0.4.4.bin
 341fe3c9fbe79bc75d967b7d8a21bb8997e88b98b33197105ce9b07ae7af446b  JuanFi-RE-asus-rt-ac68u-24.10.5-beta-0.4.5.bin
 b19dec4a61f2deab6acb02a2aaac916a55267ea45822f9893c58aab9d853dc51  JuanFi-RE-asus-rt-ac68u-24.10.5-beta-0.4.55.bin
+52490057797651eb1ea211a9eada01cb13476634780487229ee9dea12465bda5  JuanFi-RE-asus-rt-ac68u-24.10.5-beta-0.4.56.bin
 723393fc87c7326cf1f7eac33ee0aa161b00d581d6cef1651bc5de87c7f22d26  JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.5.bin
 f85c1c9cc6a0e5171f3a6ef2ffce28f9f4149707fcc2c5897dcb1b2e5c948365  JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.6.bin
 282cc75ce99b62d5820c7ad9b75a99c71b5dddb8facd223aaf622f353f7dc8b3  JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.0.bin
@@ -14,6 +15,7 @@ cac6a57a65b84d76921ea2c8f48f9f043149f6a48cb1804c00c1e7ea5ee12b3f  JuanFi-RE-asus
 c55b3a0238d261b7b9edfd87400cece694c00ef85ece2b0ba9e8f879caccc6c7  JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.4.bin
 a9f0e040a34580867c1e74e8914c007e77632b8dfc9ef2da7bf6dcbb0e0dcf2c  JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.5.bin
 ac0488a5bab424ce9f6fe46fea19fbd73d56edb41ff51331a12ecb9eedf7f98a  JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.55.bin
+6ac0b15760381d3d7c55277858113117afab944c48cafb95eb165fdf77491462  JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.56.bin
 61ad690fa66056123fbab7bfdeb5c4d7c5fd1544fefc167b56b2e85c73eb4779  JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.0.bin
 1b0407d47008a9ffb4f3be217b820e76fce57441ff1fb048b47f48c73acf79a4  JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.1.bin
 5780b1db0bcfcf8b12922045acbdb20a498ded5481cb7874adfd3e022750fe5d  JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.2.bin
@@ -21,6 +23,7 @@ f9927502efa348c56f841808fb2855beb81e5008081f28645efdbb5ca3f9bbf4  JuanFi-RE-comf
 8c1ec8a2bf78b62dbdfcbc4059ec8110d46221702f34a7c531294911f88252de  JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.4.bin
 9c9da70d6bceede77f644ccd462cfcfd91ae96ec20867c8f9a3cf96e5a7a273f  JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.5.bin
 625608c975649b7e751ca0ee75853444e552befe1f7e6a1100074a1590aa3dea  JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.55.bin
+5a95a2b3c3e930d92907bffa63327c01381049e245efcd405259cac1dd7eb2b8  JuanFi-RE-comfast-cf-ew71-v2-25.12.2-beta-0.4.56.bin
 bfccc679037b119cd14c82838cb4bcf77633dcc549d0a4dce54ba50fadd32bd9  JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.0.bin
 ab1697a0f8d2672121fbdabf76169dca9de564f8d15b6c4cb1a83dd3d52306df  JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.1.bin
 5c24c47e72fab9eb19fa1155191a4b3d189af1fbac34173ae44370b0448f8152  JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.2.bin
@@ -28,6 +31,7 @@ e9916596a68fbd1e1ce515e1357ce888e0cacbc6bf5a7792fb20e93b18a4359c  JuanFi-RE-comf
 e4d6ad480347e860dd224df4057f8558efdc14b485f02369210c7dff0c91502c  JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.4.bin
 2aa4580c7acbd3c9ccc5de4c02e18b8c0367918d994cdbde3f26dfdaed7ea8ff  JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.5.bin
 1b411405038caa98b4743b80fea80e8cbe192c69a2005b98483aba9636539710  JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.55.bin
+3969fe9ecbf7b6b4f97a5431a497cf5b4729ed89573243ad59884b42605ddbaf  JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.56.bin
 52e483d7dbf4ebf9207a3f0476df36b44f2bd3a2817a8328e3f0cc27079ffcb1  JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.5.bin
 eb518c03e79045521793e24cf7be53b4a60e469f8800c41cd5ae857f37eb6aa0  JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.6.bin
 1f3d1a9efc5ed745d80979623bb58999720491628e66883ade09fc1309118328  JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.0.bin
@@ -37,6 +41,7 @@ a93d0bc73fcbde6d2f76e547bfb976ff4a20a9140859198bc6053e778085966e  JuanFi-RE-comf
 75d8e9bb72857a92bbd0710771d603a7f8caba9c68a59452926db70746cb6677  JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.4.bin
 743b5180149c06ee12b579f127a2fdf493f43ebdb68d16e308b92c1849592efa  JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.5.bin
 c5a8b945fbd18830e3d83827ff81cdc03250b7c160cd1550179721d56cb9cc77  JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.55.bin
+617a1e80999593d06b8283a9a4c08b6616e144e231630c404c42ad2fc990ee77  JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.56.bin
 c916fb6112247151cadb731948f3c11c49f8b2ccae43c287edb985b72a4520bc  JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.0.bin
 ddac546556d04845789b7d97fd4fe9d8baa64b69a486b4d453746a953f86c2eb  JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.1.bin
 c7539c2076827cc5d5ba333ad250f918447eef037c68ae7955e738c2e4c6d06b  JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.2.bin
@@ -44,6 +49,7 @@ c7539c2076827cc5d5ba333ad250f918447eef037c68ae7955e738c2e4c6d06b  JuanFi-RE-eap2
 d00b10d80bc89cfcc2ecee3857bb5d10825942d3cb1586980cd259bf3635ffcd  JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.4.bin
 be89353973bf5bf1f400ad67eaf0673bba80db75dca9ba0db23eadf4457f5fd3  JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.5.bin
 95c3bf3cc34761c14272cba41012e97e5b7b61175c66db993c1cefa7ea9dda24  JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.55.bin
+f9b95a91882881b1b5d611d2285a78d5077c46f1fa08d832bd1562727a27aaa3  JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.56.bin
 2929959e58bf9f2379ae901711ab9c13ea047970403e43222a64eb5e7a468425  JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.0.bin
 6139fdfd29137e803cd2a87c9598a7c48c69f969fc8ee9510e69d076fc90ea87  JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.1.bin
 9b38b95bacce8997b61f115203a5fd5fe35d067f2f148fd879c868aa69dbf108  JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.2.bin
@@ -51,6 +57,7 @@ be89353973bf5bf1f400ad67eaf0673bba80db75dca9ba0db23eadf4457f5fd3  JuanFi-RE-eap2
 a9458745ddc5370c748521705ce038b47b6a78be749610a0a2d43c21127adfe7  JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.4.bin
 bb398e8aade51527d3305417fdcacb3bc82a4d3cf3f46f34ff2ba6cbf341485b  JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.5.bin
 e2141d13cc47ad2295cec6de1073970f5f5df76b10d86cc02ce400b6f120e821  JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.55.bin
+453010b7191ccdcf5c350a8f747cf3d6b901d933835835d423bc8f0642e9e528  JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.56.bin
 e46a7f2bad66eb29c9805609d2d78c8ac781175de0d86ddc8011bc65287428ae  JuanFi-RE-eap225-v1-24.10.3-beta-0.4.0.bin
 939903697c2c90415afd24b035c409de89a9da8da5b35fddc528ae90acfd1813  JuanFi-RE-eap225-v1-24.10.3-beta-0.4.1.bin
 84ec8485f7dcaeb9e09f76948bac23a8695b8702299968c7b4ad5d75d88a9710  JuanFi-RE-eap225-v1-24.10.3-beta-0.4.2.bin
@@ -58,6 +65,7 @@ fac76ae34bce48e248bb687315d2e8effe0aa6f0271d7b215bfb18579f1aa020  JuanFi-RE-eap2
 b09de241ae57ae99dcf81c2f6f52d7e3746370c49632bf1fa0598d743f728011  JuanFi-RE-eap225-v1-24.10.3-beta-0.4.4.bin
 e616f489b9e4d576d0f4ed1744dd1df49afd289afe3b03f749d7a59a8493226d  JuanFi-RE-eap225-v1-24.10.3-beta-0.4.5.bin
 3b1717856d964387aa0558bab9626874c3928b50a5c0f8fc60266814b45f7017  JuanFi-RE-eap225-v1-24.10.3-beta-0.4.55.bin
+6e6a183b39c09494cbaaa1a001c8e223e0a93a4fe1adb0f0c2e2c01a2b7d0def  JuanFi-RE-eap225-v1-24.10.3-beta-0.4.56.bin
 bcf041c8f58e5efd2f5dd2624c69b3ef45bd4b8751f4c66bbe90d336f0239018  JuanFi-RE-eap225-v3-24.10.3-beta-0.4.0.bin
 02742e3f358d31eae7412ae989011299c54b830e1063a0a16e1b44454a4df5a4  JuanFi-RE-eap225-v3-24.10.3-beta-0.4.1.bin
 407e159c242880bb866b59f4d2b84fb81aacd9fcb104e7cdb1079f700c291a2e  JuanFi-RE-eap225-v3-24.10.3-beta-0.4.2.bin
@@ -65,6 +73,7 @@ e8ff54a602ba4bef0cef8709f30a98b1196d4a8fecb34899089f81fad5c3e4ed  JuanFi-RE-eap2
 7e7c8bfe6cc890fc8ac469d37a27c00081673c8a8bd44d9e3eb3da1402c059c5  JuanFi-RE-eap225-v3-24.10.3-beta-0.4.4.bin
 5c2a38a9a56bd04b344ff8d6fce8ea8267274c458c4f21b1767d2397526dde34  JuanFi-RE-eap225-v3-24.10.3-beta-0.4.5.bin
 f655e6413d243272b40aa46026276fd34e0f022e98d3138ad3c38e735167e2e4  JuanFi-RE-eap225-v3-24.10.3-beta-0.4.55.bin
+e271e1c0efe30d508ce5f69a341f7721c616c6cedcdb3a548c8e5149c738850c  JuanFi-RE-eap225-v3-24.10.3-beta-0.4.56.bin
 07ae1fef69f6a2cbef18d3b462008be4aba578ba599b2f1fea9cdbefad6aa8e3  JuanFi-RE-eap225-v4-24.10.3-beta-0.4.0.bin
 aa29be877da7dfb9a3723b756a20f88c17b2a976df91eb88db01f75fa200806b  JuanFi-RE-eap225-v4-24.10.3-beta-0.4.1.bin
 dcb2bb944c19cc073efe5e5667029de573aa43225de2fcdf7483eb2f53f8f9d7  JuanFi-RE-eap225-v4-24.10.3-beta-0.4.2.bin
@@ -72,6 +81,7 @@ dcb2bb944c19cc073efe5e5667029de573aa43225de2fcdf7483eb2f53f8f9d7  JuanFi-RE-eap2
 3225818b94eb440917f80c5927ee52300baf04ef75102fd6a604097da9f97298  JuanFi-RE-eap225-v4-24.10.3-beta-0.4.4.bin
 d3100fe4ec56743bd7894fa30c6a3bc2c2e67c33044b6e3e5703f915b78aa2be  JuanFi-RE-eap225-v4-24.10.3-beta-0.4.5.bin
 c716763cfb4dd19777babc5acd427d84f9761798ccb943a791b03476762111b5  JuanFi-RE-eap225-v4-24.10.3-beta-0.4.55.bin
+40803d6408b050de998d5500390685d5e9b8e94ae0d887fda70272c4c708cedf  JuanFi-RE-eap225-v4-24.10.3-beta-0.4.56.bin
 e4e72b733b1f9b15bd1df366641d37916d77133ca3c91186eb8a51a5127c2719  JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.0.bin
 75ac9678f8095ac887f3d2c333c371e2ecc1fbeb8c805f81643a8f9d52f20791  JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.1.bin
 1f39d42354e95147e75c83ce07e316eedc3dafd462271b0c38070fbf24a1e5e4  JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.2.bin
@@ -79,6 +89,7 @@ af4ccfe924797b0f6f86db565bb4809634dfccfd8178eeba54936af78c1802ff  JuanFi-RE-eap2
 69f0c26dd2709842040102e46905212cd7eff06ff4606cf2c980f670f63c14dc  JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.4.bin
 bcef0916fae3136dbbfebd170e70280aa326372b7c2e93edf7ec00bb89b886f1  JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.5.bin
 245bbdcce22cb368cc317fa1278fe680b15da7d569f99bb522929b1227557e74  JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.55.bin
+da6bf51e80636960f3cb008455b74380633f1292d8e527b93dddef9add835209  JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.56.bin
 50baee00364dc0fdabcd6c92bff78b28e497ac404a89a9fe85c22f4c4aad2d65  JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.5.bin
 4f2afc8b30cb2f2b9559598fa63ac051f681968e1ca1e088d5adb1360564996d  JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.6.bin
 5b4d121fec9d67e44e8fec59f4bc6c81d39fafb13e2aeb79247f90b5c722a55c  JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.4.0.bin
@@ -88,6 +99,7 @@ f3b2ab8ddd7ded9b64c94f18a0a42b1e72c47bb8544800cfb8a8812c088fdb75  JuanFi-RE-edup
 b039aa9e757260b278cbb22125deaf41253218e028332fad52113e888226f5b8  JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.4.4.bin
 43025236bfdef78d9113ad760dc7b133300578db7fd1b5740bf550ed18f0d716  JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.4.5.bin
 3e285eed8dec263da199825b2c58bc0ac11918c719b91d4f74afababfa0dd4a3  JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.4.55.bin
+551c1ce76a2e7d7dc118eb5229cdf796e036b4c1df5e58c888b151a23ec3ba37  JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.4.56.bin
 dfae6b4bb18d1b75d6fa279b8418e6ec5447dc688831c292f733a0191057d18f  JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.5.bin
 0b2b9f85b6d879c38da8aba1aafd196980ce9d91e3740e84bc19d7fdbea34075  JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.6.bin
 c9a9460bad36d32cd12b1f99f5cbdf7d9392ce6ca5387dabe683fa24c94d2d87  JuanFi-RE-linksys-ea8300-23.05.5-beta-0.4.0.bin
@@ -97,6 +109,7 @@ cc38d5bbaf7a2870540e130ce3d018c261091b2a618d276ae05593139ff8bf2c  JuanFi-RE-link
 124065bbb69ea57f3e92210375d82fec42068ced787f3b04282f9447991580e7  JuanFi-RE-linksys-ea8300-23.05.5-beta-0.4.4.bin
 6c12cc1f7e5d051552a5a2b52810dae72a9bca0d39c7da73776219aab3211838  JuanFi-RE-linksys-ea8300-23.05.5-beta-0.4.5.bin
 2018e828766acc42577bd1556ef4590fde27b41ec67adc737fc47c4a33500cb7  JuanFi-RE-linksys-ea8300-23.05.5-beta-0.4.55.bin
+88479d5bfe0295fb7620030cc733fe960227048e5d6838accdaac8922bdeb7c1  JuanFi-RE-linksys-ea8300-23.05.5-beta-0.4.56.bin
 feaee4c2b50f1fd060ecc42cbc1a5fede096f935b7f6b21322e312172e7b0752  JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.5.bin
 4af93358b09abb98c17b0827f295a472ec25c14bfbdddae79d931585b61871a8  JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.6.bin
 b6f37ca8005a288fed2eff32f4d226c35d23341e9f45f94757c6f74a33865b67  JuanFi-RE-linksys-ea8300-24.10.3-beta-0.4.0.bin
@@ -106,6 +119,7 @@ c1fc709e96dabc220e555669a10e58dc5881be694d458ac35446def7f5f0c6a5  JuanFi-RE-link
 11d5ac9b78df43b3434ae2251f38720cdb65197543887f4690b94c26043a4fca  JuanFi-RE-linksys-ea8300-24.10.3-beta-0.4.4.bin
 5609be470903df8954daf608e085d5cd9038a1bba98f0c36300a9ebbe4dc8038  JuanFi-RE-linksys-ea8300-24.10.3-beta-0.4.5.bin
 b26ac860239e77c7548d0587efc2d7d960447ef313bd163b669fab4b65b0a019  JuanFi-RE-linksys-ea8300-24.10.3-beta-0.4.55.bin
+2748783fd5dc782a35cd5fbe6ad218331da9a273f3575f9cd0b49f2815a05077  JuanFi-RE-linksys-ea8300-24.10.3-beta-0.4.56.bin
 bf0eaac71bc578848fca720f076e5bcce17f68a86eb6dbbc69181c069ec30628  JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.5.bin
 70c9bcfb99653e7123c38b435c698937cf0d9b59c5e28ea89d3471f47d087bc7  JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.6.bin
 815482a9b6fc642c9dbb3bf6d4fe5b005f314b7be483dcb630f84b32bf9d0e07  JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.4.0.bin
@@ -115,6 +129,7 @@ f97699b4a7568240b28dd1f383c4505cbc4c375b0f54e01ef007e59ccda43015  JuanFi-RE-link
 f72a100ab1d99f38947355a8c40b6124067d6186123b005a8fb8ab0ad236f8da  JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.4.4.bin
 9de8a91a52f8c91a904b11601de534c6bf8eb8fd990ff42e7d0a6cd843843f27  JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.4.5.bin
 fb25325083e7a1ebc91e61a6dd441bd1dbeabf5f96c6b056132fadd9d13b5f8e  JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.4.55.bin
+967cdf4852db2982808c6494ee7a0e28baf3e6cb57b95bee40eb9ecb728041f3  JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.4.56.bin
 bd79889aeed837f58214006f55ff69668d796e320b93acdcd6280a4c6af4d395  JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.0.bin
 6be206629460eeeb7182c4554accffe5a7d9c00b8fc308416af796159723ad3d  JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.1.bin
 25eab8f1b6bfa65de8652794a0d1e4831434116799f7b9db0279351cfa69d4bf  JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.2.bin
@@ -122,6 +137,7 @@ bd79889aeed837f58214006f55ff69668d796e320b93acdcd6280a4c6af4d395  JuanFi-RE-merc
 583ead228f945fa29de5fd86f59f2483e414138ce73da83101b911527d46996f  JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.4.bin
 2a1e04587a7e74ee1a231f531c25f1c0921b77fb56ec640405d68c1624498dea  JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.5.bin
 b2de3aa5e5d8ade01d46ffb4c78e007654907d6aa3449b5680d1cf708a30ebae  JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.55.bin
+ff4da5b9839e71fb3915ed5586d988ea53670e8458d93cad8ab1082a2aaa975a  JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.56.bin
 04b8c7dff2da72c67d9c40c435ed352bb06810d5942b1a2955d587940b98ecba  JuanFi-RE-newifi-d2-24.10.3-beta-0.3.5.bin
 71fb5d143513cd5ee7719aea1e69efc0b6b3c9d4d9f8e9d587ff0e4c63cabebf  JuanFi-RE-newifi-d2-24.10.3-beta-0.3.6.bin
 374ceb5006d2a28071ffc51835dbafa6a5bffabee1b68bd3fb413436c1cde5d7  JuanFi-RE-newifi-d2-24.10.3-beta-0.4.0.bin
@@ -131,6 +147,7 @@ fff1498d8c826609f8fb0b32d09b1e701a9c4c6f28d93a0c31ca28d52f581040  JuanFi-RE-newi
 0484bfeeb57f2bce7091a924ba3ea063f33d1f6bbf37ae13a09018dd3ab32ba0  JuanFi-RE-newifi-d2-24.10.3-beta-0.4.4.bin
 0ca6dde61917435983f4360cdd93b2e2b55682aefb69bc15b0c04ab7d8851011  JuanFi-RE-newifi-d2-24.10.3-beta-0.4.5.bin
 8a9726c1eb3f0cf7721c331a33f92433803f1fce999fc6f87856d3a1c720ad92  JuanFi-RE-newifi-d2-24.10.3-beta-0.4.55.bin
+5b220f3e0899b714b16acdeebc3876a3ad576bf8f5f5a01dbdc45bb8591ada13  JuanFi-RE-newifi-d2-24.10.3-beta-0.4.56.bin
 b05680f91c34c5e6f38f59a1c5f70f83120cbe5517da542554312841e0bf2e00  JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.5.bin
 3b6e975536b994cd262c8656ac3bb3f5affe1401a5d987851f67e204150af227  JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.6.bin
 7010590938a325b97be86501948b7e281b2c095bd296021873ed874f22c6b296  JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.4.0.bin
@@ -140,6 +157,7 @@ e854138599c087d4b4b1fabf5e5293dae016c362ad29140133c5d1e877cf65f3  JuanFi-RE-ruij
 3858094da6278a1a7a901b35dde0c0d7060c54a4692f246f3a5d4f7617be5e23  JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.4.4.bin
 cfcecda3ccaae1effa5a465de5ee3bb0b2dde83b332e0cb09e213be0e8daa3e4  JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.4.5.bin
 caac1f3d11b4cb77490f9c3e5550e542d0b48d91b4a2e919ba43d63d71efe43d  JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.4.55.bin
+edcea3ba598f58db79489929d0e110572e7f3c13047383242c58810e00fae412  JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.4.56.bin
 f2d6927225583f1312006bf198ba3d3dbae3456b10a145c8f0417e8658ef8b4c  JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.0.bin
 550a81766a7bcae191c77c14ea6bc1a6434c03f0857c580f38b6db038869487f  JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.1.bin
 74d575f36d214b486264cb9dd06e62618651503d357246e79f3dd36a688af2d2  JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.2.bin
@@ -147,6 +165,7 @@ a5b58f159e5817db3473e4f117d9d5dbbac5ad22016183076ce2bed795aa9abe  JuanFi-RE-ruij
 30a81bdefd781d29c587b3beeeee91b2104d7522454f1c4b964ffcbdbc2fd41a  JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.4.bin
 dd47fad68d29b508f7f6fc3befd5ee48610d05d215f6ceb354d1184db3534aa9  JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.5.bin
 3f58298729afbf0d73643b226b49b09ffe330e6e98b28cbd55aa31fec6193384  JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.55.bin
+bdfed2f49122d268a6b3debde9f4bed925192692fae70fbc82667b174e1f5195  JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.56.bin
 52e483d7dbf4ebf9207a3f0476df36b44f2bd3a2817a8328e3f0cc27079ffcb1  JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.3.5.bin
 eb518c03e79045521793e24cf7be53b4a60e469f8800c41cd5ae857f37eb6aa0  JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.3.6.bin
 1f3d1a9efc5ed745d80979623bb58999720491628e66883ade09fc1309118328  JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.4.0.bin
@@ -157,3 +176,4 @@ c6bcfb68ed33b0ce671b0d842eae680d1a2ddafa94185aaa795146d806da71ec  JuanFi-RE-zbt-
 75d8e9bb72857a92bbd0710771d603a7f8caba9c68a59452926db70746cb6677  JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.4.4.bin
 743b5180149c06ee12b579f127a2fdf493f43ebdb68d16e308b92c1849592efa  JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.4.5.bin
 c5a8b945fbd18830e3d83827ff81cdc03250b7c160cd1550179721d56cb9cc77  JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.4.55.bin
+617a1e80999593d06b8283a9a4c08b6616e144e231630c404c42ad2fc990ee77  JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.4.56.bin
