@@ -2,6 +2,11 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.58 — 2026-09-08
+
+**System updates.** Improved firmware installation compatibility while retaining
+download integrity checks.
+
 ## beta 0.4.57 — 2026-09-08
 
 **PPPoE subscriptions.** Added reusable plans and improved subscriber management
