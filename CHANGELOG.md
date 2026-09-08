@@ -2,6 +2,18 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.60 — 2026-09-08
+
+**Admin dashboard.** Added a revenue overview tile and a live CPU and memory
+usage monitor.
+
+**Reliability.** The router now recovers automatically by rebooting after a
+prolonged loss of internet connectivity.
+
+**Upgrades.** Wi‑Fi settings are now preserved across firmware updates.
+
+**Appearance.** Refined the admin sidebar in light mode.
+
 ## beta 0.4.59 — 2026-09-08
 
 **Admin interface.** Fixed an issue that could prevent the dashboard from loading
