@@ -2,6 +2,11 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.59 — 2026-09-08
+
+**Admin interface.** Fixed an issue that could prevent the dashboard from loading
+on some devices.
+
 ## beta 0.4.58 — 2026-09-08
 
 **System updates.** Improved firmware installation compatibility while retaining
