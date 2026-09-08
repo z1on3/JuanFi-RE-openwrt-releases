@@ -2,6 +2,18 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.57 — 2026-09-08
+
+**PPPoE subscriptions.** Added reusable plans and improved subscriber management
+for PPPoE deployments.
+
+**Appearance.** Added light and dark modes to both the client portal and admin
+dashboard.
+
+**Reliability and performance.** Improved time accounting, sales resets, client
+expiry display, long-duration grants, upgrade migrations, and low-memory admin
+performance.
+
 ## beta 0.4.56 — 2026-09-04
 
 **Portal.** The Insert Coin screen now shows the time you've earned updating live
