@@ -2,6 +2,33 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.61 — 2026-09-09
+
+**PC and single‑board computer images.** JuanFi‑RE now runs on **Raspberry Pi
+3 / 4 / 5**, **x86‑64 PCs** (BIOS and EFI), and **Orange Pi One / PC / Zero 3**.
+These ship as ready‑to‑write whole‑disk images (`.img.gz`) that configure their
+network automatically on first boot — the first wired port becomes the internet
+uplink and the onboard Wi‑Fi becomes the hotspot, so a headless box comes up
+ready for setup.
+
+**Coin acceptor over GPIO.** Boards with GPIO pins can now read a coin acceptor
+directly, set up from a new **PIN Settings** tab in the admin.
+
+**Node management.** The Edit dialog for a coin‑acceptor node now shows its live
+system info (heap, uptime, Wi‑Fi signal, coin counters), lets you change its pin
+assignments, and can push a **firmware update to the node over the air** from the
+admin — no reflashing by hand. Requires node firmware v0.4 (below).
+
+**New device.** Added support for the **AIRPHO AR‑W410**.
+
+## node firmware v0.4 — 2026-09-09
+
+**Managed from the router.** The ESP8266 coin‑acceptor node can now be viewed,
+reconfigured, and updated remotely from the router's admin over the local
+network — including an over‑the‑air firmware update. Reflash **both** node images
+(firmware **and** LittleFS UI) to move an existing node to v0.4; after that,
+future updates can be pushed from the admin.
+
 ## beta 0.4.60 — 2026-09-08
 
 **Admin dashboard.** Added a revenue overview tile and a live CPU and memory
