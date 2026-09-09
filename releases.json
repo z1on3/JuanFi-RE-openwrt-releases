@@ -8,6 +8,15 @@
       "notes": "JuanFi Reloaded - Beta 0.4.61",
       "assets": [
         {
+          "board": "airpho-ar-w410",
+          "name": "AIRPHO AR-W410",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-airpho-ar-w410-24.10.3-beta-0.4.61.bin",
+          "sha256": "5ba35619e6a1ee8662476fba7abbb9761bb6672975d386642c6416ea2857202c",
+          "image": "",
+          "note": "ZBT WG3526 (16M) clone — identical image to the ZBT WG3526; in-product updates track the ZBT WG3526 asset."
+        },
+        {
           "board": "asus-rt-ac68u",
           "name": "ASUS RT-AC68U",
           "openwrt": "24.10.5",
@@ -15,6 +24,15 @@
           "sha256": "d675233a4d006d5ee2e27e6090f47b73090f00c2bec7994a4df999de5608bd32",
           "image": "https://dlcdnwebimgs.asus.com/gain/6670e848-ba84-47e0-97d5-fd076ac3a137/w185",
           "note": "⚠ Wi-Fi unsupported on this Broadcom board in OpenWrt — routes over Ethernet only and cannot serve its own hotspot. Use it wired or paired with an external AP node. First flash from stock ASUS uses the .trx (this image is that .trx under a .bin name)."
+        },
+        {
+          "board": "asus-rt-ax52",
+          "name": "ASUS RT-AX52",
+          "openwrt": "25.12.0",
+          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.61.bin",
+          "sha256": "d6322490181c709dbdbb70b20a5f93735f60a0cd033550169d8a93b1a723f112",
+          "image": "https://image.alza.cz/products/Asus23_022/Asus23_022-01.jpg",
+          "note": ""
         },
         {
           "board": "comfast-cf-ew71-v2",
@@ -26,30 +44,12 @@
           "note": ""
         },
         {
-          "board": "airpho-ar-w410",
-          "name": "AIRPHO AR-W410",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-airpho-ar-w410-24.10.3-beta-0.4.61.bin",
-          "sha256": "5ba35619e6a1ee8662476fba7abbb9761bb6672975d386642c6416ea2857202c",
-          "image": "",
-          "note": "ZBT WG3526 (16M) clone — identical image to the ZBT WG3526; in-product updates track the ZBT WG3526 asset."
-        },
-        {
           "board": "comfast-cf-ew72-v2",
           "name": "Comfast CF-EW72 v2",
           "openwrt": "25.12.5",
           "file": "JuanFi-RE-comfast-cf-ew72-v2-25.12.5-beta-0.4.61.bin",
           "sha256": "319b2eb2d6f95193a9cff50fa228b6a8cdc363e90ebb955c2f2b0c3309f6403a",
           "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-ew72-v2.webp",
-          "note": ""
-        },
-        {
-          "board": "asus-rt-ax52",
-          "name": "ASUS RT-AX52",
-          "openwrt": "25.12.0",
-          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.61.bin",
-          "sha256": "d6322490181c709dbdbb70b20a5f93735f60a0cd033550169d8a93b1a723f112",
-          "image": "https://image.alza.cz/products/Asus23_022/Asus23_022-01.jpg",
           "note": ""
         },
         {
