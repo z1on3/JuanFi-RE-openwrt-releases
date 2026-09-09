@@ -50,6 +50,10 @@ const DEVICES = {
   'ruijie-rg-ew1200g-pro-v1.1': { name: 'Ruijie RG-EW1200G PRO v1.1', image: 'https://eo-sgp-cos.ruijie.com/background/other/2023-10-27/7b9d778c2293490a993760bc68f52396.png' },
   'ruijie-rg-ew3200gx-pro':     { name: 'Ruijie RG-EW3200GX PRO',     image: 'https://eo-sgp-cos.ruijie.com/background/other/2023-10-30/b2b529094b4d432fa998eba11a445b19.png' },
   'zbt-wg3526-16m':             { name: 'ZBT WG3526 (16M)',           image: '' },
+  // AIRPHO AR-W410 — a ZBT WG3526 16M clone; its release .bin is a byte-for-byte copy
+  // of the zbt-wg3526-16m image (see build-all.sh). Listed as its own device for the
+  // download site; on-device OTA still matches the zbt-wg3526-16m asset (same board name).
+  'airpho-ar-w410':             { name: 'AIRPHO AR-W410',             image: '', note: 'ZBT WG3526 (16M) clone — identical image to the ZBT WG3526; in-product updates track the ZBT WG3526 asset.' },
   // TP-Link EAP225 single-port family — TP-Link's CDN blocks hotlinking (HTTP 403),
   // so no working public img src; host a photo in release/img/ to fill these.
   // (No eap225-v2: v2 hardware has no separate OpenWrt profile and flashes the v1 image.)
