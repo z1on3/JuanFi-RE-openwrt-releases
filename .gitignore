@@ -9,6 +9,8 @@ firmware/
 patch/
 patch-*.tar.gz
 
+appliance/
+
 # Patch build staging dirs.
 payload-*/
 .payload-*/
