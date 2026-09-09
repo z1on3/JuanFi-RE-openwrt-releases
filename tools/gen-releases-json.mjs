@@ -24,6 +24,14 @@ const gh = (args) => execFileSync('gh', args, { encoding: 'utf8', maxBuffer: 64 
 // board slugs contain dashes; the OpenWrt version is the N.N.N token before -beta-.
 const IMG_RE = /^JuanFi-RE-(.+)-(\d+\.\d+\.\d+)-beta-(.+)\.bin$/;
 
+// PC/SBC appliance image filename: JuanFi-RE-<board>-<openwrt>-beta-<rel>.img.gz
+// (whole-disk images written to SD/eMMC/disk, e.g. Raspberry Pi, x86-64, Orange Pi).
+// Same naming shape as the router .bin, different extension; the x86-64 EFI variant
+// is ...-<rel>-efi.img.gz and still parses board == 'x86-64'. These are download-only:
+// their board slugs are deliberately absent from the on-device cvfi_board_slug map, so
+// the router OTA picker never matches (and never tries to sysupgrade a whole-disk image).
+const APP_RE = /^JuanFi-RE-(.+)-(\d+\.\d+\.\d+)-beta-(.+)\.img\.gz$/;
+
 // Per-device presentation metadata (display name, product photo, optional warning
 // note), keyed by the board slug parsed out of the image filename above. Emitted both
 // as a top-level `devices` catalog AND inlined on each asset so the website can render
@@ -63,6 +71,16 @@ const DEVICES = {
   'eap225-outdoor-v1':          { name: 'TP-Link EAP225-Outdoor v1',  image: '', note: EAP225_NOTE },
   'eap225-outdoor-v3':          { name: 'TP-Link EAP225-Outdoor v3',  image: '', note: EAP225_NOTE },
   'eap225-wall-v2':             { name: 'TP-Link EAP225-Wall v2',     image: '', note: EAP225_NOTE },
+  // PC / SBC appliance images (whole-disk .img.gz for SD/eMMC/disk — NOT an OTA
+  // sysupgrade target). Listed for the download site only; these slugs are absent
+  // from cvfi_board_slug so no running router is ever offered one.
+  'orange-pi-one':              { name: 'Orange Pi One',              image: '' },
+  'orange-pi-pc':               { name: 'Orange Pi PC',               image: '' },
+  'orange-pi-zero-3':           { name: 'Orange Pi Zero 3',           image: '' },
+  'raspberry-pi-3':             { name: 'Raspberry Pi 3',             image: '' },
+  'raspberry-pi-4':             { name: 'Raspberry Pi 4',             image: '' },
+  'raspberry-pi-5':             { name: 'Raspberry Pi 5',             image: '' },
+  'x86-64':                     { name: 'PC / x86-64',                image: '' },
 };
 
 function parseSums(text) {
@@ -97,6 +115,20 @@ for (const rel of releases) {
     process.stderr.write(`warn: ${tag}: could not read SHA256SUMS.txt (${e.message})\n`);
   }
 
+  // Appliance images carry their checksums in a SEPARATE manifest so the router
+  // SHA256SUMS.txt stays purely sysupgrade .bin. Best-effort: most releases lack it.
+  let appSums = {};
+  if (names.includes('SHA256SUMS-appliance.txt')) {
+    const atmp = join(tmpdir(), `cvfi-appsums-${tag.replace(/[^\w.-]/g, '_')}.txt`);
+    try {
+      gh(['release', 'download', tag, '--repo', repo, '--pattern', 'SHA256SUMS-appliance.txt', '--output', atmp, '--clobber']);
+      appSums = parseSums(readFileSync(atmp, 'utf8'));
+      rmSync(atmp, { force: true });
+    } catch (e) {
+      process.stderr.write(`warn: ${tag}: could not read SHA256SUMS-appliance.txt (${e.message})\n`);
+    }
+  }
+
   const assets = [];
   for (const name of names) {
     const m = name.match(IMG_RE);
@@ -104,6 +136,20 @@ for (const rel of releases) {
     const [, board, openwrt] = m;
     const sha256 = sums[name];
     if (!sha256) { continue; }           // no checksum -> unsafe to offer
+    const meta = DEVICES[board] || { name: board, image: '', note: '' };
+    assets.push({ board, name: meta.name, openwrt, file: name, sha256, image: meta.image || '', note: meta.note || '' });
+  }
+  // Appliance whole-disk images (.img.gz), same asset shape so the site renders them
+  // uniformly. Checksums come from SHA256SUMS-appliance.txt (fall back to the main
+  // manifest if an older release folded them together). The on-device OTA picker
+  // ignores these (their board slugs aren't in cvfi_board_slug), so they can never be
+  // offered to a router as an update.
+  for (const name of names) {
+    const m = name.match(APP_RE);
+    if (!m) { continue; }
+    const [, board, openwrt] = m;
+    const sha256 = appSums[name] || sums[name];
+    if (!sha256) { continue; }
     const meta = DEVICES[board] || { name: board, image: '', note: '' };
     assets.push({ board, name: meta.name, openwrt, file: name, sha256, image: meta.image || '', note: meta.note || '' });
   }

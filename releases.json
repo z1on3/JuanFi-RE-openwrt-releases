@@ -195,6 +195,78 @@
           "sha256": "5ba35619e6a1ee8662476fba7abbb9761bb6672975d386642c6416ea2857202c",
           "image": "",
           "note": ""
+        },
+        {
+          "board": "orange-pi-one",
+          "name": "Orange Pi One",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-orange-pi-one-24.10.3-beta-0.4.61.img.gz",
+          "sha256": "c4cfac27eda7267041852076eea76c985dcd92e72cc5db84598326aa3e998e0a",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "orange-pi-pc",
+          "name": "Orange Pi PC",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-orange-pi-pc-24.10.3-beta-0.4.61.img.gz",
+          "sha256": "5f503ee571c15c0de46f990e8527a405a9348d660d793f0ba47ba06e59605e49",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "orange-pi-zero-3",
+          "name": "Orange Pi Zero 3",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-orange-pi-zero-3-24.10.3-beta-0.4.61.img.gz",
+          "sha256": "7b94fbf4dc2f398ae97265ac6a235546a0a6e7f9947eab053aeff1f390da6191",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "raspberry-pi-3",
+          "name": "Raspberry Pi 3",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-raspberry-pi-3-24.10.3-beta-0.4.61.img.gz",
+          "sha256": "ec7412585fce822d40f0b09062cf9a74626b59540b5bcbb4c8879044aacca6e9",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "raspberry-pi-4",
+          "name": "Raspberry Pi 4",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-raspberry-pi-4-24.10.3-beta-0.4.61.img.gz",
+          "sha256": "f174cb3e7ee69f2e0711ff573b4ff1cb1acdab5de73d55c6624a9ec636c85e91",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "raspberry-pi-5",
+          "name": "Raspberry Pi 5",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-raspberry-pi-5-24.10.3-beta-0.4.61.img.gz",
+          "sha256": "f6652d083a55c68e168a1a920f2e63f3bdc80fc4dd30e6154fc7cbe1f54c1603",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "x86-64",
+          "name": "PC / x86-64",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-x86-64-24.10.3-beta-0.4.61-efi.img.gz",
+          "sha256": "59ee26cec4ca9508cbbf9c482b7ade95ed6877ee024f398a5aeed318045b8b08",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "x86-64",
+          "name": "PC / x86-64",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-x86-64-24.10.3-beta-0.4.61.img.gz",
+          "sha256": "02dfbe122273d2da2b485579a23ab1fcc8827a9b3662b0ab9bfd0dcf23dc8c88",
+          "image": "",
+          "note": ""
         }
       ]
     },
@@ -2874,6 +2946,41 @@
       "name": "TP-Link EAP225-Wall v2",
       "image": "",
       "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+    },
+    "orange-pi-one": {
+      "name": "Orange Pi One",
+      "image": "",
+      "note": ""
+    },
+    "orange-pi-pc": {
+      "name": "Orange Pi PC",
+      "image": "",
+      "note": ""
+    },
+    "orange-pi-zero-3": {
+      "name": "Orange Pi Zero 3",
+      "image": "",
+      "note": ""
+    },
+    "raspberry-pi-3": {
+      "name": "Raspberry Pi 3",
+      "image": "",
+      "note": ""
+    },
+    "raspberry-pi-4": {
+      "name": "Raspberry Pi 4",
+      "image": "",
+      "note": ""
+    },
+    "raspberry-pi-5": {
+      "name": "Raspberry Pi 5",
+      "image": "",
+      "note": ""
+    },
+    "x86-64": {
+      "name": "PC / x86-64",
+      "image": "",
+      "note": ""
     }
   }
 }
