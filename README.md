@@ -106,6 +106,105 @@ failed.
 
 ---
 
+## PC & single‑board computer images (Raspberry Pi / x86‑64 / Orange Pi)
+
+Besides the router `.bin` images above, JuanFi‑RE also ships as **whole‑disk
+appliance images** for PCs and single‑board computers. These are **not** OpenWrt
+sysupgrade files — they are gzipped disk images (`.img.gz`) you **write to a USB
+stick, SD card, or SSD/eMMC** with a tool like **Rufus** or **balenaEtcher**, then
+boot the machine from that media.
+
+| Platform | File pattern | Boot media |
+|---|---|---|
+| **Raspberry Pi 3 / 4 / 5** | `JuanFi-RE-raspberry-pi-{3,4,5}-…​.img.gz` | microSD card |
+| **x86‑64 PC** — BIOS/Legacy | `JuanFi-RE-x86-64-…​.img.gz` | USB stick or internal SATA/NVMe disk |
+| **x86‑64 PC** — UEFI/EFI | `JuanFi-RE-x86-64-…​-efi.img.gz` | USB stick or internal SATA/NVMe disk |
+| **Orange Pi One / PC / Zero 3** | `JuanFi-RE-orange-pi-{one,pc,zero-3}-…​.img.gz` | microSD card |
+
+> **BIOS vs EFI (x86 only):** use the plain `x86-64` image if your PC boots in
+> Legacy/CSM mode, or the `x86-64-…-efi` image if it boots in UEFI mode. Modern
+> mini‑PCs and laptops are almost always **UEFI** → pick the **`-efi`** file. If one
+> won't boot, flip the BIOS boot‑mode setting or try the other image.
+
+### What the appliance does on first boot
+
+Each appliance image **configures its own network automatically** — no serial
+console needed for a headless box:
+
+- The **first wired Ethernet port becomes the internet uplink (WAN, DHCP client)** —
+  plug it into your existing router/modem.
+- The **onboard Wi‑Fi becomes the hotspot** (LAN), open SSID **`JuanFi Reloaded`**,
+  gateway **`10.0.0.1`**. Any extra Ethernet ports fold into the LAN bridge.
+- Admin console at **`http://10.0.0.1/admin/`**, default login **`admin` / `admin`** —
+  **change it immediately**.
+
+So the flow is: **write the image → plug WAN cable into the first Ethernet port →
+power on → join the `JuanFi Reloaded` Wi‑Fi → open `http://10.0.0.1/admin/`.**
+
+> ⚠️ **x86 boards need onboard or USB Wi‑Fi** for the hotspot. A PC with no Wi‑Fi
+> radio will still boot and route, but won't broadcast a hotspot until you add a
+> supported USB Wi‑Fi adapter (or bridge a second Ethernet port to downstream APs).
+
+### Writing the image with balenaEtcher (Windows / macOS / Linux — recommended)
+
+[**balenaEtcher**](https://etcher.balena.io/) reads the `.img.gz` **directly** — you
+do **not** need to unzip it first.
+
+1. Download the correct `…​.img.gz` for your board (see the table above) and, if you
+   like, verify it against [`SHA256SUMS.txt`](SHA256SUMS.txt) / the appliance
+   checksums file.
+2. Insert the USB stick / SD card. **Everything on it will be erased.**
+3. Open balenaEtcher → **Flash from file** → pick the `.img.gz`.
+4. **Select target** → choose the USB/SD device (double‑check the size so you don't
+   pick your system disk).
+5. **Flash!** and wait for the write + validate to finish. Eject when done.
+6. Move the media to the target machine (or leave it in), plug the **WAN cable into
+   the first Ethernet port**, and power on.
+
+### Writing the image with Rufus (Windows)
+
+[**Rufus**](https://rufus.ie/) writes raw disk images, but it **cannot read `.img.gz`
+directly — decompress it to a plain `.img` first.**
+
+1. **Unzip the image.** Right‑click the `…​.img.gz` and extract it (7‑Zip / WinRAR /
+   Windows) so you have a plain **`…​.img`** file.
+2. Insert the USB stick / SD card. **Everything on it will be erased.**
+3. Open Rufus → **Device**: select your USB/SD drive (verify the size).
+4. **Boot selection** → **SELECT** → choose the extracted **`.img`**.
+5. If Rufus asks about writing mode, choose **Write in DD Image mode** (it usually
+   auto‑detects this for raw disk images).
+6. Leave partition scheme/target as detected, click **START**, confirm the erase
+   warning, and wait for **READY**.
+7. Safely eject, move the media to the target machine, plug the **WAN cable into the
+   first Ethernet port**, and power on.
+
+> **`dd` (macOS / Linux CLI) alternative:**
+> ```sh
+> gunzip -c JuanFi-RE-x86-64-24.10.3-beta-….img.gz | sudo dd of=/dev/sdX bs=4M status=progress conv=fsync
+> ```
+> Replace `/dev/sdX` with your target device (`lsblk` / `diskutil list`). **Wrong
+> device = wiped disk** — check twice.
+
+### Booting an x86 PC from the image
+
+- Insert the USB stick (or install the flashed SSD/eMMC), enter the PC's boot menu
+  (usually **F12 / F11 / Esc / F8** at power‑on), and select the USB/disk.
+- To run permanently from an **internal disk**, flash the image **onto that disk**
+  (via a USB‑to‑SATA adapter, or boot a live Linux USB and `dd` it), then boot from
+  it normally.
+- The image comes up headless — you don't need a monitor. Once it boots, look for the
+  **`JuanFi Reloaded`** Wi‑Fi and browse to **`http://10.0.0.1/admin/`**.
+
+> The image's partition is small; OpenWrt uses an overlay for config/data, so there's
+> no need to pre‑expand it for normal use. Flash to media at least as large as the
+> uncompressed `.img`.
+
+⚠️ **Beta.** These appliance images self‑configure the network on first boot; if you
+have a specific LAN/WAN layout, adjust it afterward in the admin / LuCI. Each image
+is validated only on its listed platform.
+
+---
+
 ## ESP8266 coin‑acceptor node
 
 > 📖 **New to nodes? Start with the [Node enrollment guide →](NODE-ENROLLMENT.md)** —

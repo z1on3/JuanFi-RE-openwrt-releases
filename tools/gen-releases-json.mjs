@@ -74,13 +74,16 @@ const DEVICES = {
   // PC / SBC appliance images (whole-disk .img.gz for SD/eMMC/disk — NOT an OTA
   // sysupgrade target). Listed for the download site only; these slugs are absent
   // from cvfi_board_slug so no running router is ever offered one.
-  'orange-pi-one':              { name: 'Orange Pi One',              image: '' },
+  'orange-pi-one':              { name: 'Orange Pi One',              image: 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Top_view_of_an_Orange_Pi_One_single-board_computer.jpg' },
   'orange-pi-pc':               { name: 'Orange Pi PC',               image: '' },
   'orange-pi-zero-3':           { name: 'Orange Pi Zero 3',           image: '' },
-  'raspberry-pi-3':             { name: 'Raspberry Pi 3',             image: '' },
-  'raspberry-pi-4':             { name: 'Raspberry Pi 4',             image: '' },
-  'raspberry-pi-5':             { name: 'Raspberry Pi 5',             image: '' },
-  'x86-64':                     { name: 'PC / x86-64',                image: '' },
+  'raspberry-pi-3':             { name: 'Raspberry Pi 3',             image: 'https://upload.wikimedia.org/wikipedia/commons/7/74/Raspberry_Pi_3_B%2B.jpg' },
+  'raspberry-pi-4':             { name: 'Raspberry Pi 4',             image: 'https://upload.wikimedia.org/wikipedia/commons/1/10/Raspberry_Pi_4_Model_B_-_Top.jpg' },
+  'raspberry-pi-5':             { name: 'Raspberry Pi 5',             image: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Raspberry_Pi_5.jpg' },
+  // x86-64 ships two variants (EFI/UEFI and legacy BIOS), both parsing to board
+  // 'x86-64'; the appliance loop below appends "(EFI)"/"(BIOS)" to this name so the
+  // two download cards are distinguishable.
+  'x86-64':                     { name: 'PC / x86-64',                image: 'https://upload.wikimedia.org/wikipedia/commons/2/26/Intel_NUC_Mini_PC.jpg' },
 };
 
 function parseSums(text) {
@@ -151,7 +154,14 @@ for (const rel of releases) {
     const sha256 = appSums[name] || sums[name];
     if (!sha256) { continue; }
     const meta = DEVICES[board] || { name: board, image: '', note: '' };
-    assets.push({ board, name: meta.name, openwrt, file: name, sha256, image: meta.image || '', note: meta.note || '' });
+    // x86-64 has two whole-disk variants (EFI/UEFI and legacy BIOS) that both parse
+    // to board 'x86-64', so they'd otherwise render two identical "PC / x86-64" cards.
+    // The EFI image is ...-<rel>-efi.img.gz; everything else is the BIOS image.
+    let displayName = meta.name;
+    if (board === 'x86-64') {
+      displayName = /-efi\.img\.gz$/.test(name) ? `${meta.name} (EFI)` : `${meta.name} (BIOS)`;
+    }
+    assets.push({ board, name: displayName, openwrt, file: name, sha256, image: meta.image || '', note: meta.note || '' });
   }
   if (!assets.length) { continue; }
 

@@ -202,7 +202,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-orange-pi-one-24.10.3-beta-0.4.61.img.gz",
           "sha256": "c4cfac27eda7267041852076eea76c985dcd92e72cc5db84598326aa3e998e0a",
-          "image": "",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Top_view_of_an_Orange_Pi_One_single-board_computer.jpg",
           "note": ""
         },
         {
@@ -229,7 +229,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-raspberry-pi-3-24.10.3-beta-0.4.61.img.gz",
           "sha256": "ec7412585fce822d40f0b09062cf9a74626b59540b5bcbb4c8879044aacca6e9",
-          "image": "",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Raspberry_Pi_3_B%2B.jpg",
           "note": ""
         },
         {
@@ -238,7 +238,7 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-raspberry-pi-4-24.10.3-beta-0.4.61.img.gz",
           "sha256": "f174cb3e7ee69f2e0711ff573b4ff1cb1acdab5de73d55c6624a9ec636c85e91",
-          "image": "",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Raspberry_Pi_4_Model_B_-_Top.jpg",
           "note": ""
         },
         {
@@ -247,25 +247,25 @@
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-raspberry-pi-5-24.10.3-beta-0.4.61.img.gz",
           "sha256": "f6652d083a55c68e168a1a920f2e63f3bdc80fc4dd30e6154fc7cbe1f54c1603",
-          "image": "",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Raspberry_Pi_5.jpg",
           "note": ""
         },
         {
           "board": "x86-64",
-          "name": "PC / x86-64",
+          "name": "PC / x86-64 (EFI)",
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-x86-64-24.10.3-beta-0.4.61-efi.img.gz",
           "sha256": "59ee26cec4ca9508cbbf9c482b7ade95ed6877ee024f398a5aeed318045b8b08",
-          "image": "",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Intel_NUC_Mini_PC.jpg",
           "note": ""
         },
         {
           "board": "x86-64",
-          "name": "PC / x86-64",
+          "name": "PC / x86-64 (BIOS)",
           "openwrt": "24.10.3",
           "file": "JuanFi-RE-x86-64-24.10.3-beta-0.4.61.img.gz",
           "sha256": "02dfbe122273d2da2b485579a23ab1fcc8827a9b3662b0ab9bfd0dcf23dc8c88",
-          "image": "",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Intel_NUC_Mini_PC.jpg",
           "note": ""
         }
       ]
@@ -2949,7 +2949,7 @@
     },
     "orange-pi-one": {
       "name": "Orange Pi One",
-      "image": "",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Top_view_of_an_Orange_Pi_One_single-board_computer.jpg",
       "note": ""
     },
     "orange-pi-pc": {
@@ -2964,22 +2964,22 @@
     },
     "raspberry-pi-3": {
       "name": "Raspberry Pi 3",
-      "image": "",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Raspberry_Pi_3_B%2B.jpg",
       "note": ""
     },
     "raspberry-pi-4": {
       "name": "Raspberry Pi 4",
-      "image": "",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Raspberry_Pi_4_Model_B_-_Top.jpg",
       "note": ""
     },
     "raspberry-pi-5": {
       "name": "Raspberry Pi 5",
-      "image": "",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Raspberry_Pi_5.jpg",
       "note": ""
     },
     "x86-64": {
       "name": "PC / x86-64",
-      "image": "",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Intel_NUC_Mini_PC.jpg",
       "note": ""
     }
   }
