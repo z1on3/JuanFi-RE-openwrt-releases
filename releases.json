@@ -8,67 +8,13 @@
       "notes": "",
       "assets": [
         {
-          "board": "asus-rt-ax52",
-          "name": "ASUS RT-AX52",
-          "openwrt": "25.12.0",
-          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.62.bin",
-          "sha256": "fd845ab22405ca2bf780ec152cbcdf1ff62e03ef10749467f7577e56ef84c12f",
-          "image": "https://image.alza.cz/products/Asus23_022/Asus23_022-01.jpg",
-          "note": ""
-        },
-        {
-          "board": "eap225-wall-v2",
-          "name": "TP-Link EAP225-Wall v2",
+          "board": "airpho-ar-w410",
+          "name": "AIRPHO AR-W410",
           "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.62.bin",
-          "sha256": "2b5601697e0722a481bf9f1a815ca5e27cd00b34b625241aa4f72135d6891041",
+          "file": "JuanFi-RE-airpho-ar-w410-24.10.3-beta-0.4.62.bin",
+          "sha256": "9ec1a537fb58129cc5080441e2e3a9c6ad013bf1f5e9affb39588e1d709f95f6",
           "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-outdoor-v3",
-          "name": "TP-Link EAP225-Outdoor v3",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.62.bin",
-          "sha256": "216de6394caa5c22b6e0b0835408929a457f2b74a4b9aff9c3517c7c007f020e",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-outdoor-v1",
-          "name": "TP-Link EAP225-Outdoor v1",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.62.bin",
-          "sha256": "a090c66c83d397bed3d02c40d02503f1a3306bb7ca93a409c9d1ec6d52313554",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-v4",
-          "name": "TP-Link EAP225 v4",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-v4-24.10.3-beta-0.4.62.bin",
-          "sha256": "a9b6389c818a7f94c806045880ff73585a484fc13314340d3973d82b8b3ad0cd",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-v3",
-          "name": "TP-Link EAP225 v3",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-v3-24.10.3-beta-0.4.62.bin",
-          "sha256": "67df58a7bd99f9b56a4dc085a1a87e03c768704e526627676fc6110dbfdc75b7",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
-        },
-        {
-          "board": "eap225-v1",
-          "name": "TP-Link EAP225 v1",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-eap225-v1-24.10.3-beta-0.4.62.bin",
-          "sha256": "9cfe46b2090172eee4b20a399acda801c81bb970ce1b6fd9df8efcf3e7a9eb4f",
-          "image": "",
-          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+          "note": "ZBT WG3526 (16M) clone — identical image to the ZBT WG3526; in-product updates track the ZBT WG3526 asset."
         },
         {
           "board": "asus-rt-ac68u",
@@ -78,6 +24,15 @@
           "sha256": "09ab72e170b202b09a827d0545a78253b0e4bc4bc2a37a70651ac6d5e7eaaabb",
           "image": "https://dlcdnwebimgs.asus.com/gain/6670e848-ba84-47e0-97d5-fd076ac3a137/w185",
           "note": "⚠ Wi-Fi unsupported on this Broadcom board in OpenWrt — routes over Ethernet only and cannot serve its own hotspot. Use it wired or paired with an external AP node. First flash from stock ASUS uses the .trx (this image is that .trx under a .bin name)."
+        },
+        {
+          "board": "asus-rt-ax52",
+          "name": "ASUS RT-AX52",
+          "openwrt": "25.12.0",
+          "file": "JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.4.62.bin",
+          "sha256": "fd845ab22405ca2bf780ec152cbcdf1ff62e03ef10749467f7577e56ef84c12f",
+          "image": "https://image.alza.cz/products/Asus23_022/Asus23_022-01.jpg",
+          "note": ""
         },
         {
           "board": "comfast-cf-ew71-v2",
@@ -98,22 +53,67 @@
           "note": ""
         },
         {
-          "board": "ruijie-rg-ew3200gx-pro",
-          "name": "Ruijie RG-EW3200GX PRO",
-          "openwrt": "24.10.5",
-          "file": "JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.62.bin",
-          "sha256": "0dc0e39379a1230e69cfe4f2de7abd62f6b7f2113c31249d4e75f2345b61624c",
-          "image": "https://eo-sgp-cos.ruijie.com/background/other/2023-10-30/b2b529094b4d432fa998eba11a445b19.png",
+          "board": "comfast-cf-n5-v2",
+          "name": "Comfast CF-N5 v2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.62.bin",
+          "sha256": "9ec1a537fb58129cc5080441e2e3a9c6ad013bf1f5e9affb39588e1d709f95f6",
+          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
           "note": ""
         },
         {
-          "board": "mercusys-mr70x-v1",
-          "name": "Mercusys MR70X v1",
-          "openwrt": "25.12.5",
-          "file": "JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.62.bin",
-          "sha256": "f38ba0c31251d7bd8bdbcf69dae483cfe1ce1138c21859445a234dd9a071a356",
-          "image": "https://static.mercusys.com/product-image/01_large20201223072930.jpg",
-          "note": ""
+          "board": "eap225-outdoor-v1",
+          "name": "TP-Link EAP225-Outdoor v1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-outdoor-v1-24.10.3-beta-0.4.62.bin",
+          "sha256": "a090c66c83d397bed3d02c40d02503f1a3306bb7ca93a409c9d1ec6d52313554",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-outdoor-v3",
+          "name": "TP-Link EAP225-Outdoor v3",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-outdoor-v3-24.10.3-beta-0.4.62.bin",
+          "sha256": "216de6394caa5c22b6e0b0835408929a457f2b74a4b9aff9c3517c7c007f020e",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-v1",
+          "name": "TP-Link EAP225 v1",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-v1-24.10.3-beta-0.4.62.bin",
+          "sha256": "9cfe46b2090172eee4b20a399acda801c81bb970ce1b6fd9df8efcf3e7a9eb4f",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-v3",
+          "name": "TP-Link EAP225 v3",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-v3-24.10.3-beta-0.4.62.bin",
+          "sha256": "67df58a7bd99f9b56a4dc085a1a87e03c768704e526627676fc6110dbfdc75b7",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-v4",
+          "name": "TP-Link EAP225 v4",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-v4-24.10.3-beta-0.4.62.bin",
+          "sha256": "a9b6389c818a7f94c806045880ff73585a484fc13314340d3973d82b8b3ad0cd",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
+        },
+        {
+          "board": "eap225-wall-v2",
+          "name": "TP-Link EAP225-Wall v2",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-eap225-wall-v2-24.10.3-beta-0.4.62.bin",
+          "sha256": "2b5601697e0722a481bf9f1a815ca5e27cd00b34b625241aa4f72135d6891041",
+          "image": "",
+          "note": "⚠ Experimental — single-port AP-as-gateway image, not yet boot-tested on hardware. Flash only on a device you can recover, and verify one revision (internet + portal + a client session) first."
         },
         {
           "board": "edup-ep-rt2983",
@@ -121,15 +121,6 @@
           "openwrt": "25.12.4",
           "file": "JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.4.62.bin",
           "sha256": "16382d4f5d6313546f2fce71258406fc613303f315e8fd58d8e6ccf88b301540",
-          "image": "",
-          "note": ""
-        },
-        {
-          "board": "linksys-wrt1900acs",
-          "name": "Linksys WRT1900ACS",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.4.62.bin",
-          "sha256": "906f835391c3cc84532fd01ed378647a044fdd81b82cd7393b9ffa0ae5e7ae2d",
           "image": "",
           "note": ""
         },
@@ -152,6 +143,24 @@
           "note": ""
         },
         {
+          "board": "linksys-wrt1900acs",
+          "name": "Linksys WRT1900ACS",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.4.62.bin",
+          "sha256": "906f835391c3cc84532fd01ed378647a044fdd81b82cd7393b9ffa0ae5e7ae2d",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "mercusys-mr70x-v1",
+          "name": "Mercusys MR70X v1",
+          "openwrt": "25.12.5",
+          "file": "JuanFi-RE-mercusys-mr70x-v1-25.12.5-beta-0.4.62.bin",
+          "sha256": "f38ba0c31251d7bd8bdbcf69dae483cfe1ce1138c21859445a234dd9a071a356",
+          "image": "https://static.mercusys.com/product-image/01_large20201223072930.jpg",
+          "note": ""
+        },
+        {
           "board": "newifi-d2",
           "name": "Newifi D2",
           "openwrt": "24.10.3",
@@ -170,13 +179,13 @@
           "note": ""
         },
         {
-          "board": "airpho-ar-w410",
-          "name": "AIRPHO AR-W410",
-          "openwrt": "24.10.3",
-          "file": "JuanFi-RE-airpho-ar-w410-24.10.3-beta-0.4.62.bin",
-          "sha256": "9ec1a537fb58129cc5080441e2e3a9c6ad013bf1f5e9affb39588e1d709f95f6",
-          "image": "",
-          "note": "ZBT WG3526 (16M) clone — identical image to the ZBT WG3526; in-product updates track the ZBT WG3526 asset."
+          "board": "ruijie-rg-ew3200gx-pro",
+          "name": "Ruijie RG-EW3200GX PRO",
+          "openwrt": "24.10.5",
+          "file": "JuanFi-RE-ruijie-rg-ew3200gx-pro-24.10.5-beta-0.4.62.bin",
+          "sha256": "0dc0e39379a1230e69cfe4f2de7abd62f6b7f2113c31249d4e75f2345b61624c",
+          "image": "https://eo-sgp-cos.ruijie.com/background/other/2023-10-30/b2b529094b4d432fa998eba11a445b19.png",
+          "note": ""
         },
         {
           "board": "zbt-wg3526-16m",
@@ -188,12 +197,75 @@
           "note": ""
         },
         {
-          "board": "comfast-cf-n5-v2",
-          "name": "Comfast CF-N5 v2",
+          "board": "orange-pi-one",
+          "name": "Orange Pi One",
           "openwrt": "24.10.3",
-          "file": "JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.4.62.bin",
-          "sha256": "9ec1a537fb58129cc5080441e2e3a9c6ad013bf1f5e9affb39588e1d709f95f6",
-          "image": "https://comfastgroup.com/wp-content/uploads/2024/09/cf-n5-v2.webp",
+          "file": "JuanFi-RE-orange-pi-one-24.10.3-beta-0.4.62.img.gz",
+          "sha256": "4bc06287ec4c4377a0e0320a5655220f4bb56f0543657f90f495a8be47016931",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Top_view_of_an_Orange_Pi_One_single-board_computer.jpg",
+          "note": ""
+        },
+        {
+          "board": "orange-pi-pc",
+          "name": "Orange Pi PC",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-orange-pi-pc-24.10.3-beta-0.4.62.img.gz",
+          "sha256": "5d8989b99c6b06e1d04ce8f49158ca80950396ff305019cd91d207e271a9de59",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "orange-pi-zero-3",
+          "name": "Orange Pi Zero 3",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-orange-pi-zero-3-24.10.3-beta-0.4.62.img.gz",
+          "sha256": "512bd9ee5985070f85b8dabe65a576e0bea6ab5cc57c75f2c4fa1de690d91877",
+          "image": "",
+          "note": ""
+        },
+        {
+          "board": "raspberry-pi-3",
+          "name": "Raspberry Pi 3",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-raspberry-pi-3-24.10.3-beta-0.4.62.img.gz",
+          "sha256": "0440101cd9dd802cead9076f3939ec04d1de3e915f8e2a492e1297a84e856fd8",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Raspberry_Pi_3_B%2B.jpg",
+          "note": ""
+        },
+        {
+          "board": "raspberry-pi-4",
+          "name": "Raspberry Pi 4",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-raspberry-pi-4-24.10.3-beta-0.4.62.img.gz",
+          "sha256": "9f15600dd2af6ae7c6162bc919fa9d18f5892011b9501bd640c0a7e78c85ead0",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Raspberry_Pi_4_Model_B_-_Top.jpg",
+          "note": ""
+        },
+        {
+          "board": "raspberry-pi-5",
+          "name": "Raspberry Pi 5",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-raspberry-pi-5-24.10.3-beta-0.4.62.img.gz",
+          "sha256": "3fb12b490fec7965556041f414b770fc8cd8eeac50b12f5bdc9c9202848b75c8",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Raspberry_Pi_5.jpg",
+          "note": ""
+        },
+        {
+          "board": "x86-64",
+          "name": "PC / x86-64 (EFI)",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-x86-64-24.10.3-beta-0.4.62-efi.img.gz",
+          "sha256": "317466debd0a8b26682f9db027bfe5ee01a0806e88d77504534a8820bf7ae582",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Intel_NUC_Mini_PC.jpg",
+          "note": ""
+        },
+        {
+          "board": "x86-64",
+          "name": "PC / x86-64 (BIOS)",
+          "openwrt": "24.10.3",
+          "file": "JuanFi-RE-x86-64-24.10.3-beta-0.4.62.img.gz",
+          "sha256": "d282c206ebf2292fb61bff1e6c17fd6d06009d25e4518d258cbc52fde1bda01c",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Intel_NUC_Mini_PC.jpg",
           "note": ""
         }
       ]
