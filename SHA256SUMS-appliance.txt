@@ -1,0 +1,8 @@
+4bc06287ec4c4377a0e0320a5655220f4bb56f0543657f90f495a8be47016931  JuanFi-RE-orange-pi-one-24.10.3-beta-0.4.62.img.gz
+5d8989b99c6b06e1d04ce8f49158ca80950396ff305019cd91d207e271a9de59  JuanFi-RE-orange-pi-pc-24.10.3-beta-0.4.62.img.gz
+512bd9ee5985070f85b8dabe65a576e0bea6ab5cc57c75f2c4fa1de690d91877  JuanFi-RE-orange-pi-zero-3-24.10.3-beta-0.4.62.img.gz
+0440101cd9dd802cead9076f3939ec04d1de3e915f8e2a492e1297a84e856fd8  JuanFi-RE-raspberry-pi-3-24.10.3-beta-0.4.62.img.gz
+9f15600dd2af6ae7c6162bc919fa9d18f5892011b9501bd640c0a7e78c85ead0  JuanFi-RE-raspberry-pi-4-24.10.3-beta-0.4.62.img.gz
+3fb12b490fec7965556041f414b770fc8cd8eeac50b12f5bdc9c9202848b75c8  JuanFi-RE-raspberry-pi-5-24.10.3-beta-0.4.62.img.gz
+317466debd0a8b26682f9db027bfe5ee01a0806e88d77504534a8820bf7ae582  JuanFi-RE-x86-64-24.10.3-beta-0.4.62-efi.img.gz
+d282c206ebf2292fb61bff1e6c17fd6d06009d25e4518d258cbc52fde1bda01c  JuanFi-RE-x86-64-24.10.3-beta-0.4.62.img.gz

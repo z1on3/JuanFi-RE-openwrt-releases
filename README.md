@@ -13,26 +13,16 @@ node** firmware.
 
 ## What's in the current release
 
-| Component | File | Version |
+| Component | Files | Version |
 |---|---|---|
-| Router image — Comfast **CF‑N5 v2** | `JuanFi-RE-comfast-cf-n5-v2-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
-| Router image — **ZBT WG3526** (16 MB) | `JuanFi-RE-zbt-wg3526-16m-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
-| Router image — Ruijie **RG‑EW1200G PRO v1.1** | `JuanFi-RE-ruijie-rg-ew1200g-pro-v1.1-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
-| Router image — **Newifi D2** (D‑Team) | `JuanFi-RE-newifi-d2-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
-| Router image — Linksys **EA8300** (AC2200) — OpenWrt **23.05.5** _(recommended)_ | `JuanFi-RE-linksys-ea8300-23.05.5-beta-0.3.5.bin` | **beta 0.3.5** |
-| Router image — Linksys **EA8300** (AC2200) — OpenWrt 24.10.3 | `JuanFi-RE-linksys-ea8300-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
-| Router image — Linksys **WRT1900ACS** | `JuanFi-RE-linksys-wrt1900acs-24.10.3-beta-0.3.5.bin` | **beta 0.3.5** |
-| Router image — **EDUP EP‑RT2983** (Wi‑Fi 6) | `JuanFi-RE-edup-ep-rt2983-25.12.4-beta-0.3.5.bin` | **beta 0.3.5** |
-| Router image — ASUS **RT‑AX52** _(dev kit)_ | `JuanFi-RE-asus-rt-ax52-25.12.0-beta-0.3.5.bin` | **beta 0.3.5** |
-| ESP8266 node — firmware (Wi‑Fi + Ethernet) | `JuanFi-RE-ESP8266-node-firmware-v0.3.bin` | **v0.3** |
-| ESP8266 node — LittleFS (web UI) image | `JuanFi-RE-ESP8266-node-littlefs-v0.3.bin` | **v0.3** |
+| Router images — all supported router and access-point profiles below | `JuanFi-RE-*-beta-0.4.62.bin` | **beta 0.4.62** |
+| PC / SBC appliance images — Raspberry Pi, x86‑64, and Orange Pi | `JuanFi-RE-*-beta-0.4.62*.img.gz` | **beta 0.4.62** |
+| ESP8266 node — firmware + LittleFS UI | Available from the beta 0.4.61 release | **v0.4** _(unchanged)_ |
 
-> **What's new in beta 0.3.5?** See [`CHANGELOG.md`](CHANGELOG.md): **Connectivity
-> protection**, an in‑product **System Upgrade** feature, and **printable vouchers**.
-> The ESP8266 node firmware is now **v0.3** — a **single image that supports both
-> Wi‑Fi and wired (Ethernet) nodes**, chosen in the first‑run **Setup wizard**;
-> reflash **both** node images (firmware **and** LittleFS UI). Setting up a
-> coin‑acceptor node? See the
+> **What's new in beta 0.4.62?** See [`CHANGELOG.md`](CHANGELOG.md): improved
+> node settings and reliability, system-aware portal appearance, broader USB
+> Ethernet support for appliance images, and more reliable appliance updates.
+> Setting up a coin‑acceptor node? See the
 > [Node enrollment guide](NODE-ENROLLMENT.md).
 
 Verify downloads against [`SHA256SUMS.txt`](SHA256SUMS.txt):
@@ -40,6 +30,9 @@ Verify downloads against [`SHA256SUMS.txt`](SHA256SUMS.txt):
 ```sh
 sha256sum -c SHA256SUMS.txt
 ```
+
+PC / SBC appliance checksums are provided separately as
+`SHA256SUMS-appliance.txt` with the release assets.
 
 ---
 
@@ -71,9 +64,8 @@ Each image comes up ready to run as a PisoWiFi gateway:
   served here.
 - **Wi‑Fi enabled on both bands** (2.4 GHz + 5 GHz), **open** (auth is the captive
   portal, not a Wi‑Fi key), SSID **`JuanFi Reloaded`**.
-- **Admin console** at **`http://10.0.0.1/admin/`** ships with a default login —
-  **username `admin`, password `admin`**. **Change it immediately** on the admin
-  Settings page after first sign‑in.
+- **Admin console** at **`http://10.0.0.1/admin/`** starts with a first-run setup
+  screen. Choose the sole admin username and password.
 
 ### Flashing the router
 
@@ -90,7 +82,7 @@ your device's usual OpenWrt flashing method). Follow the official OpenWrt guide:
 > `192.168.1.x`, recovery page at `192.168.1.1`).
 
 After reboot the portal is served at the router's LAN IP; the admin panel is at
-`/admin/` (sign in with `admin` / `admin`, then change the password).
+`/admin/` (complete the first-run admin setup when prompted).
 
 ⚠️ **Beta.** Flash at your own risk on hardware you can recover. Each image is only
 validated on its listed device.
@@ -135,8 +127,7 @@ console needed for a headless box:
   plug it into your existing router/modem.
 - The **onboard Wi‑Fi becomes the hotspot** (LAN), open SSID **`JuanFi Reloaded`**,
   gateway **`10.0.0.1`**. Any extra Ethernet ports fold into the LAN bridge.
-- Admin console at **`http://10.0.0.1/admin/`**, default login **`admin` / `admin`** —
-  **change it immediately**.
+- Admin console at **`http://10.0.0.1/admin/`** — complete the first-run admin setup.
 
 So the flow is: **write the image → plug WAN cable into the first Ethernet port →
 power on → join the `JuanFi Reloaded` Wi‑Fi → open `http://10.0.0.1/admin/`.**

@@ -2,6 +2,17 @@
 
 All notable changes to the JuanFi‑RE flashable releases are documented here.
 
+## beta 0.4.62 — 2026-09-11
+
+**Node management.** Improved the pin-settings editor and Save workflow, with
+more reliable delivery of node configuration changes.
+
+**Appearance.** The client portal now follows the device's system theme by
+default and uses a quieter corner theme control.
+
+**PC and single-board computer images.** Added broader USB Ethernet adapter
+support and improved compatibility with in-product updates.
+
 ## beta 0.4.61 — 2026-09-09
 
 **PC and single‑board computer images.** JuanFi‑RE now runs on **Raspberry Pi
